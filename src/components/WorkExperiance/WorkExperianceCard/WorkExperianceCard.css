@@ -1,0 +1,108 @@
+.work-experiance-card
+{
+    background: #130f2a;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    height: 400px;
+}
+
+.work-experiance-card h6 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    padding: 0.4rem 0.6rem;
+    /* The linear gradient should match the colors and style of your logo */
+    background: linear-gradient(to right, 
+                                #ff0057, 
+                                #2a82f7, 
+                                #f7b539, 
+                                #34f5c5, 
+                                #d247fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.University
+{
+    font-size: 1rem;
+    /* background: rgba(103, 81, 185, 0.5);
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.6rem; */
+    /* text-align: center; */
+}
+
+.date
+{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgba(103, 81, 185, 0.5);
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+    text-align: center;
+}
+
+.work-experiance-card p
+{
+    list-style: none;
+    font-size: 0.90rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    position: relative;
+    line-height: 1.7rem;
+    /* margin-left: 1.5rem; */
+    /* margin-right: 2rem; */
+    text-align: justify;
+
+}
+
+@media (max-width: 1024px)
+{
+    .work-experiance-card
+    {
+        height: 430px;
+    }
+    .work-experiance-card p 
+    {
+        font-size: 0.78rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .work-experiance-card{
+        height: 350px;
+    }
+
+    .work-experiance-card h6 
+    {
+        font-size: 1.4rem;
+    }
+
+    .work-experiance-card p
+    {
+        /* font-size: 0.50rem; */
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .work-experiance-card
+    {
+        height: 550px;
+    }
+
+    .work-experiance-card p 
+    {
+        line-height: 1.6rem;
+    }
+}
+

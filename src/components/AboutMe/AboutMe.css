@@ -1,0 +1,130 @@
+.AboutMe-Container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5rem 3rem; 
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.AboutMe-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    margin-top: 3.5rem;
+}
+
+.AboutMe-img img {
+    width: 30rem;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.AboutMe-img img:hover {
+    transform: translateY(-0.5rem);
+}
+
+.AboutMe-Content {
+    flex: 1;
+    margin-left: 3rem;
+}
+
+.AboutMe-Content h5 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px #a993fe, 0 0 25px #a993fe;
+    text-align: center;
+}
+
+.AboutMe-Content p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: justify;
+}
+
+/* Responsive Styles */
+
+/* Medium Devices (Tablets, 768px and below) */
+@media (max-width: 768px) {
+
+    .AboutMe-Container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .AboutMe-img {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        order: 2; /* Image comes after content */
+    }
+
+    .AboutMe-img img {
+        width: 25rem;
+    }
+
+    .AboutMe-Content {
+        margin-left: 0;
+        text-align: center;
+        order: 1; /* Content comes before image */
+    }
+
+    .AboutMe-Content h5 {
+        font-size: 2rem;
+    }
+
+    .AboutMe-Content p {
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+/* Small Devices (Smartphones, 480px and below) */
+@media (max-width: 480px) {
+
+    .AboutMe-Container {
+        padding: 1.5rem;
+    }
+
+    .AboutMe-img img {
+        width: 18rem;
+    }
+
+    .AboutMe-Content h5 {
+        font-size: 1.8rem;
+    }
+
+    .AboutMe-Content p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* Extra Small Devices (Small smartphones, 360px and below) */
+@media (max-width: 360px) {
+
+    .AboutMe-Container {
+        padding: 1rem;
+    }
+
+    .AboutMe-img img {
+        width: 18rem;
+    }
+
+    .AboutMe-Content h5 {
+        font-size: 1.5rem;
+    }
+
+    .AboutMe-Content p {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+}

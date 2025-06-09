@@ -1,0 +1,50 @@
+.Projecy-card-container
+{
+    padding: 1.5rem;
+    margin: 0 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.project-card {
+    /* flex: 0 0 300px;   */
+    max-height: 28rem;
+    width: 22rem;
+    margin: 0 1rem;  
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    background: rgba(22, 17, 47, 0.398);  /* Correct the syntax */
+    backdrop-filter: blur(1rem);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.project-card img {
+    width: 18rem;  /* Ensure image scales properly */
+    height: 9rem;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    background: linear-gradient(to right, 
+                                #ff0057, 
+                                #2a82f7, 
+                                #f7b539, 
+                                #34f5c5, 
+                                #d247fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-left: 1.2rem;
+}
+
+.project-card p {
+    text-align: justify;
+    margin-top: 0.8rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    line-height: 1.38rem;
+}

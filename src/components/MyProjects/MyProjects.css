@@ -1,0 +1,44 @@
+.Projects-Container
+{
+    /* flex-direction: column; */
+    align-items: center;
+    position: relative;
+    /* margin: 4rem 0; */
+    margin-top: 2rem;
+    width: 100%;
+    padding: 5rem 3rem;
+}
+
+.Projects-Container h5
+{
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* margin-bottom: 1.5rem; */
+    text-shadow: 0 0 10px #a993fe, 0 0 25px #a993fe;
+    margin-top: 0rem;
+    text-align: left;
+    margin-left: 4rem;
+}
+
+.Projects {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;  /* Enable horizontal scroll */
+    scroll-behavior: smooth;  /* Smooth scrolling */
+    padding-bottom: 1rem;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar for aesthetics */
+}
+
+.horizontal-scroll {
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}

@@ -1,0 +1,120 @@
+.experiance-container
+{
+    width: 100%;
+    padding: 5rem 3rem; 
+    margin: 4rem 0;
+    position: relative;
+}
+
+.experiance-container h5 
+{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 5rem;
+    text-shadow: 0 0 10px #a993fe, 0 0 25px #a993fe;
+    margin-top: 0rem;
+    text-align: left;
+    margin-left: 4rem;
+}
+
+.arrow-left, 
+.arrow-right
+{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6751b9;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    background: #130f2a;
+    position: absolute;
+    top: 55%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.arrow-left span,
+.arrow-right span
+{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.arrow-left
+{
+    left: -2rem;
+}
+
+.arrow-right
+{
+    right: -2rem;
+}
+
+
+/* ---------------------------------- */
+
+.experiance-container .slick-prev, 
+.experiance-container .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; /* Makes the arrow buttons circular */
+    border-color: #6751b9;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* Position the previous arrow to the left */
+.experiance-container .slick-prev {
+    left: -50px; /* Adjust left position as needed */
+}
+
+/* Position the next arrow to the right */
+.experiance-container .slick-next {
+    right: -50px; /* Adjust right position as needed */
+}
+
+/* Customize the arrow icon itself */
+.experiance-container .slick-prev:before, 
+.experiance-container .slick-next:before {
+    font-size: 20px; /* Size of the arrow icon */
+    color: #ffffff; /* Color of the arrow icon */
+    content: ''; /* Remove default content */
+}
+
+/* Add custom arrow icons */
+.experiance-container .slick-prev:before {
+    content: '←'; /* Left arrow icon */
+}
+
+.experiance-container .slick-next:before {
+    content: '→'; /* Right arrow icon */
+}
+
+@media (max-width: 768px)
+{
+    .experiance-container h5 
+    {
+        text-align: center;
+        margin-left: 2px;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .experiance-container h5 
+    {
+        text-align: center;
+        /* margin-left: px; */
+    }
+}
