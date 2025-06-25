@@ -1,4 +1,3 @@
-// ContactMe.jsx
 import React from 'react';
 import './ContactMe.css';
 import ContactInfoCard from './ContactInfoCard/ContactInfoCard';
@@ -16,7 +15,7 @@ const ContactMe = () => {
             </div> */}
 
             <div className='contact-content'>
-                <div style={{flex:1}}>  
+                <div className= 'cards'>  
 
                 <ContactInfoCard 
                     icon={<MdEmail />}  // Pass the MdEmail icon
@@ -35,7 +34,7 @@ const ContactMe = () => {
 
                 <ContactInfoCard 
                     icon={<FaWhatsappSquare />} //Pass the WhatsApp icon
-                    text="0777494050"
+                    text="+94 077 749 4050"
                 />
 
                 </div>
@@ -44,7 +43,9 @@ const ContactMe = () => {
                     <h5>Let's Talk</h5>
 
                     <p>
-                        I am always eager to connect with fellow professionals, potential collaborators, or anyone interested in technology and innovation. Whether you have a project in mind, need advice on software development, or simply want to discuss the latest trends in the tech world, I would love to hear from you. Let's engage in meaningful conversations that could spark new ideas and lead to exciting opportunities. Don't hesitate to reach out—let's talk and explore how we can create something extraordinary together.
+                        I am always eager to connect with fellow professionals, potential collaborators, or anyone interested in technology and innovation. Whether you have a project in mind, need advice on software development, or simply want to discuss the latest trends in the tech world, I would love to hear from you.
+                        <br /><br />
+                        Let's talk and create something extraordinary together!
                     </p>  
 
                     <ContactForm />

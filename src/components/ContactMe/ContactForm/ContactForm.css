@@ -1,50 +1,60 @@
-.contact-form-content
-{
+.contact-form-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     width: 100%;
 }
 
-form
-{
+.name-container {
     display: flex;
-    flex-direction: column;
-    grid-gap: 1.5rem
+    gap: 1.5rem;
+    width: 100%;
 }
 
-.name-container
-{
-    display: flex;
-    align-items: center;
-    grid-gap: 1.5rem;
+.name-container input {
+    flex: 1;
 }
 
 form input,
-form textarea
-{
-    flex: 1;
-    width: 100%;
-    font-size: 0.9rem;
+form textarea {
+    font-size: 0.95rem;
     color: #fff;
     background: #130f2a;
-    border-radius: 0.6rem;
     border: 1.5px solid #6751b9;
-    padding: 1rem;
-}
-
-form button
-{
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fff;
-    border: 1.5px solid #a892fe;
     border-radius: 0.6rem;
-    background: linear-gradient(90deg, #a892fe 0%, #8064e8 100%);
-    padding: 0.5rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    resize: none;
+    transition: border 0.3s ease;
 }
 
-form button:hover
-{
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #a993fe;
+}
+
+form button {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #a892fe 0%, #8064e8 100%);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: transparent;
     color: #a892fe;
-    background-color: transparent;
+    border: 1.5px solid #a892fe;
 }

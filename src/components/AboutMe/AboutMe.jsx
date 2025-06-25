@@ -6,7 +6,7 @@ const AboutMe =() => {
         <section className='AboutMe-Container'>
             <div className='AboutMe-img'>
                 <div>
-                    <img src='AboutMe2.png' alt='About Me'/>
+                    <img src='image (1).jpg' alt='About Me'/>
                 </div>
             </div>
 
@@ -14,13 +14,20 @@ const AboutMe =() => {
                 <h5>About Me</h5>
 
                 <p>
-                Welcome to my portfolio! I'm Mohamed Imran Ifadah. I am a passionate software engineer with a strong background in technology and a keen interest in innovation. As an aspiring Software Engineer, I am passionate about turning ideas into reality through code. 
+                    Welcome to my portfolio! I'm Mohamed Imran Ifadah, a passionate and dedicated Software Engineer with a solid foundation in technology and a strong interest in innovation. I enjoy transforming ideas into practical solutions using modern tools and clean code.
                 </p>
 
                 <p>
-                    I successfully completed my Higher National Diploma (HND) in Software Engineering, which laid a solid foundation for my skills in languages like Java, Python, C#, HTML, PHP, CSS, JavaScript and SQL. Currently pursuing my BEng (Hons) in Software Engineering, exploring the exciting world of AI and new languages like React. My journey has been one of continuous learning and growth, and I am eager to apply my skills to create innovative solutions and contribute to the ever-evolving field of technology. I am driven to solve complex problems and create user-friendly applications. Explore my projects, and let's connect to build something amazing together!
+                    I have completed my Higher National Diploma (HND) in Software Engineering and earned my BEng (Hons) in Software Engineering. These academic milestones have strengthened my skills in languages and technologies such as Java, Python, C#, HTML, CSS, PHP, JavaScript, SQL, and React.js. I’m also exploring the exciting possibilities of Artificial Intelligence and Full-Stack Development.
                 </p>
                 
+                <p>
+                    My journey in software development has been focused on continuous improvement, hands-on learning, and building projects that matter. I’m motivated to develop smart, user-friendly, and reliable applications that solve real-world problems. Whether it’s front-end design, back-end logic, or full-stack solutions, I love working across all layers of a system.
+                </p>
+
+                <p>
+                    Feel free to explore my projects and connect with me. Let’s build something meaningful together!
+                </p>
             </div>
         </section>
     );

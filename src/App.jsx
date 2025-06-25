@@ -13,14 +13,16 @@ const App = () => {
   return (
     <>
       <Navbar />
+      
       <div className='container'>
-        <Hero />
-        <AboutMe />
-        <Skills />
-        <WorkExperiance />
-        <MyProjects />
-        <ContactMe />
-      </div>        
+        <section id="hero"><Hero /></section>
+        <section id="about"><AboutMe /></section>
+        <section id="skills"><Skills /></section>
+        <section id="experience"><WorkExperiance /></section>
+        <section id="projects"><MyProjects /></section>
+        <section id="contact"><ContactMe /></section>
+      </div>   
+
       <Footer />
     </>
   );

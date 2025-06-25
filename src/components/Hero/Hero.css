@@ -82,6 +82,7 @@
     width: 25rem;
     transition: all 0.3s ease;
     /* margin-bottom: 0rem; */
+    border-radius: 3rem;
 }
 
 .tech-icon
@@ -227,4 +228,26 @@
         align-items: center;
         gap: 0.5px;
     }
+}
+
+.download-cv-btn {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    border: 1.5px solid #a993fe;
+    background: linear-gradient(90deg, #a892fe 0%, #7e61e7 100%);
+    border-radius: 0.6rem;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(169, 147, 254, 0.25);
+    transition: all 0.3s ease;
+}
+
+.download-cv-btn:hover {
+    background: transparent;
+    color: #a892fe;
+    border-color: #a892fe;
 }

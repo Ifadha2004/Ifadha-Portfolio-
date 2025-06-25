@@ -29,16 +29,18 @@
     font-size: 1.5rem;
     font-weight: 900;
     background: linear-gradient(to right, 
-                                #ff0057, 
-                                #2a82f7, 
-                                #f7b539, 
                                 #34f5c5, 
-                                #d247fc);
+                                #ff0057, 
+                                #f7b539,
+                                #d247fc,
+                                #2a82f7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    margin-left: 1.2rem;
+    /* margin-left: 1.2rem; */
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
 .project-card p {

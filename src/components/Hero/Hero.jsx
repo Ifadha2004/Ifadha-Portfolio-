@@ -9,6 +9,7 @@ import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMicrosoftsqlserver } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
+import { BackgroundGradient } from "../ui/BackgroundGradient.jsx";
 
 const Hero =() => {
     return <section className="hero-container">
@@ -22,11 +23,29 @@ const Hero =() => {
             <p>
                 Graduated Software Engineer
             </p>
+
+            <a
+                href="/IFADHA_CV.pdf"
+                download="Mohamed_Imran_Ifadha_CV.pdf"
+                className="download-cv-btn">
+
+                Download CV
+            </a>
         </div>
 
         <div className="hero-img">
-            <div>
+            {/* <div>
                 <img src="./Meee.png" />
+            </div> */}
+
+            <div className="relative w-fit mx-auto">
+                <BackgroundGradient containerClassName="w-[350px] h-[460px] rounded-[10rem] shadow-[0_0_80px_#7b61ff]" />
+
+                <img
+                    src="./Meee.png"
+                    alt="profile"
+                    className="rounded-3xl w-[350px] h-[460px] absolute top-0 left-0 z-10 object-cover"
+                />
             </div>
 
             <div>

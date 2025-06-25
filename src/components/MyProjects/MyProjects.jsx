@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MyProjects.css';
 import Project_Cards from './Project_Cards/Project_Cards';
+import ProjectModal from './ProjectModal/ProjectModal';
 import { MY_PROJECTS } from '../../utils/data';
 
 const MyProjects = () => {
+    const [selectedProject, setSelectedProject] = useState(null);
+
     return (
-        <section>
+        <section className='MyProjects'>
             <div className='Projects-Container'>
                 <h5>My Projects</h5>
             </div>
@@ -13,9 +16,18 @@ const MyProjects = () => {
             <div className='Projects'>
                 {/* Passing the MY_PROJECTS array as a prop */}
                 <div className='horizontal-scroll'>
-                    <Project_Cards projects={MY_PROJECTS} />
+                    <Project_Cards 
+                        projects={MY_PROJECTS} 
+                        onCardClick={(project) => setSelectedProject(project)}
+                    />
                 </div>
             </div>
+
+            <ProjectModal
+                isOpen={!!selectedProject}
+                project={selectedProject}
+                onClose={() => setSelectedProject(null)}
+            />
         </section>
     );
 };
