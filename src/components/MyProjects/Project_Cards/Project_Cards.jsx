@@ -1,6 +1,6 @@
 import React from 'react';
 import './Project_Cards.css';
-import { HiArrowRightStartOnRectangle } from "react-icons/hi2";
+import { HiBarsArrowUp } from "react-icons/hi2";
 
 const Project_Cards = ({ projects, onCardClick }) => {
     return (
@@ -17,7 +17,7 @@ const Project_Cards = ({ projects, onCardClick }) => {
                         <div className="card-title-bar">
                             <h3>{details.Pname}</h3>
                             <button className='model-open'>
-                                <HiArrowRightStartOnRectangle />
+                                <HiBarsArrowUp />
                             </button>       
                         </div>
                     </div>
