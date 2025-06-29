@@ -12,11 +12,12 @@
     width: 22rem;
     margin: 0 1rem;  
     border-radius: 0.65rem;
-    border: 1.5px solid #6751b9;
+    border: 0.5px solid #6751b9;
     background: rgba(22, 17, 47, 0.398);  /* Correct the syntax */
     backdrop-filter: blur(1rem);
     padding: 1rem;
     box-sizing: border-box;
+    box-shadow: 0 0 10px #a993fe, 0 0 2px #6751b9;
 }
 
 .project-card img {
@@ -29,17 +30,17 @@
     font-size: 1.5rem;
     font-weight: 900;
     background: linear-gradient(to right, 
-                                #34f5c5, 
+                                #d247fc, 
                                 #ff0057, 
-                                #f7b539,
-                                #d247fc,
-                                #2a82f7);
+                                #6751b9);
+                                /* #d247fc, */
+                                /* #2a82f7); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
     /* margin-left: 1.2rem; */
-    text-align: center;
+    text-align: left;
     margin-top: 0.5rem;
 }
 
@@ -49,4 +50,28 @@
     margin-left: 0.7rem;
     margin-right: 0.7rem;
     line-height: 1.38rem;
+}
+
+.card-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.model-open {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: #a993fe;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-top: 0.8rem;
+}
+
+.model-open:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  font-weight: 600;
 }

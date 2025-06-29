@@ -1,4 +1,9 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from "swiper/modules";
 import './ProjectModal.css';
 
 const ProjectModal = ({ isOpen, onClose, project}) => {
@@ -16,7 +21,27 @@ const ProjectModal = ({ isOpen, onClose, project}) => {
                     {project.Pname}
                 </h2>
 
-                <img src={project.image} alt={project.Pname} />
+                {/* <img src={project.image} alt={project.Pname} /> */}
+                {project.images && project.images.length > 0 && (
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    className="project-carousel"
+                >
+                    {project.images.map((img, index) => (
+                    <SwiperSlide key={index}>
+                        <img
+                        src={img}
+                        alt={`${project.Pname} Screenshot ${index + 1}`}
+                        className="carousel-image"
+                        />
+                    </SwiperSlide>
+                    ))}
+                </Swiper>
+                )}
 
                 <p>
                     {project.Pdescription}

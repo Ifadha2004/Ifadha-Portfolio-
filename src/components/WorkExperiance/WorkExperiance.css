@@ -118,3 +118,47 @@
         /* margin-left: px; */
     }
 }
+
+/* Dots container */
+.experiance-container .slick-dots {
+  position: absolute;
+  bottom: -40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Default dot style */
+.experiance-container .slick-dots li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7b61ff; /* nice purple glow */
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Active dot style */
+.experiance-container .slick-dots li.slick-active {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  background: linear-gradient(145deg, #a993fe, #7b61ff);
+  box-shadow: 0 0 10px #a993fe, 0 0 20px #7b61ff;
+}
+
+/* Remove the inner <button> styles */
+.experiance-container .slick-dots li button {
+  display: none;
+}
+
+.experiance-container .slick-dots li:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}

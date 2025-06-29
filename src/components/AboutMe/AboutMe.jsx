@@ -6,7 +6,7 @@ const AboutMe =() => {
         <section className='AboutMe-Container'>
             <div className='AboutMe-img'>
                 <div>
-                    <img src='image (1).jpg' alt='About Me'/>
+                    <img src='Me.png' alt='About Me'/>
                 </div>
             </div>
 

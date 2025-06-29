@@ -36,6 +36,7 @@
     overflow-x: auto;  /* Enable horizontal scroll */
     scroll-behavior: smooth;  /* Smooth scrolling */
     padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .horizontal-scroll::-webkit-scrollbar {

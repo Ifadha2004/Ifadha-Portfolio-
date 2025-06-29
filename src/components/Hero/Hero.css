@@ -5,6 +5,7 @@
     align-items: center;
     position: relative;
     padding: 5rem 3rem; 
+    overflow: hidden;
 }
 
 /* .hero-container::after,
@@ -38,6 +39,9 @@
     margin-bottom: 2rem;
     flex:1;
     margin-left: 3.5rem;
+    align-items: left;
+    position: relative;
+    z-index: 10;
 }
 
 .hero-content h2
@@ -46,6 +50,7 @@
     font-weight: 600;
     line-height: 2rem;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .hero-content p
@@ -67,6 +72,8 @@
     align-items: center;
     gap: 1rem;
     margin-right: 5rem;
+    position: relative;
+    z-index: 10;
 }
 
 .hero-img > div{
@@ -250,4 +257,5 @@
     background: transparent;
     color: #a892fe;
     border-color: #a892fe;
+    box-shadow: 0 0 15px rgba(169, 147, 254, 0.5);
 }

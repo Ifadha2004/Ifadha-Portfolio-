@@ -83,7 +83,7 @@ export const WORK_EXPERIENCE = [
 
 export const MY_PROJECTS = [
     {
-        image: "/MealMinder1.png",
+        images: ["/MealMinder1.png", "/MealMinder2.png", "/MealMinder3.png", "/MealMinder4.png", "MealMinder5.png", "MealMinder6.png"],
         Pname: "MealMinder",
         Pdescription: "A smart food recognition and nutrition tracking system designed to assist users with dietary management. It uses AI to detect food from images, provides nutritional analysis, and recommends healthier alternatives—especially focused on users with Type 2 Diabetes, Hypertension, or High Cholesterol.",
         tech: ["Python", "TensorFlow", "Flask", "OpenCV", "Scikit-learn", "OAuth 2.0", "MySQL", "React.js", "Food-101 Dataset", "USDA Nutrition API"],
@@ -91,7 +91,7 @@ export const MY_PROJECTS = [
     },
 
     {
-        image: "/ChatBot.png",  // Assuming 'ChatBot.png' is directly inside the 'public' folder
+        images: ["FinBuddy1.png", "FinBuddy2.png", "FinBuddy3.png"],  // Assuming 'ChatBot.png' is directly inside the 'public' folder
         Pname: "FinBuddy",
         Pdescription: "FinBuddy is an AI-powered banking assistant chatbot developed using Python, Flask, and PyTorch. It leverages Natural Language Processing (NLP) and Machine Learning to provide intelligent, real-time support for common banking queries. Users can interact through a friendly chat interface to receive assistance on topics such as account types, loan information, interest rates, payment methods, and lost card procedures.",
         tech: ["Python", "Flask", "PyTorch", "NLP", "HTML/CSS"],
@@ -99,7 +99,7 @@ export const MY_PROJECTS = [
     },
 
     {
-        image: "/GasByGas1.png",
+        images: ["GasByGas1.png", "GasByGas2.png", "GasByGas3.png", "GasByGas4.png"],
         Pname: "GasByGas",
         Pdescription: "GasByGas is a full-stack web and mobile application designed to digitize LP gas distribution across Sri Lanka. The system enables consumers to request gas online, receive digital tokens, and track deliveries in real time. It includes a mobile app for consumers and web portals for outlet managers and head office administrators.",
         tech: ["React Native", "React.js", "Node.js", "Express.js", "MySQL", "JWT", "SMTP"],
@@ -107,7 +107,7 @@ export const MY_PROJECTS = [
     },
 
     {
-        image: "/DreamDay1.png",
+        images: ["DreamDay1.png", "DreamDay2.png", "DreamDay3.png", "DreamDay4.png", "DreamDay5.png"],
         Pname: "DreamDay",
         Pdescription: "A complete wedding planning web application built using ASP.NET MVC. It allows couples to register, plan events, book vendors, and manage tasks easily. Designed with user roles and a clean admin dashboard for efficient event organization.",
         tech: ["ASP.NET MVC", "C#", "Entity Framework", "SQL Server", "Bootstrap"],
@@ -115,7 +115,7 @@ export const MY_PROJECTS = [
     },
 
     {
-        image: "FlaskBlog.png",
+        images: ["FlaskBlog.png", "BlogApplication.png"],
         Pname: "Blogs ByIfi", 
         Pdescription: "A simple and clean blog application built using Flask. It includes user authentication, post creation, and editing features. Designed to showcase core web development skills while offering a responsive and smooth reading experience.",
         tech: ["Python", "Flask", "SQLite", "HTML", "CSS"],
@@ -123,7 +123,7 @@ export const MY_PROJECTS = [
     },
 
     {
-        image: "/BookHaven1.png",
+        images: ["BookHaven1.png", "BookHaven2.png", "BookHaven3.png", "BookHaven4.png", "BookHaven5.png"],
         Pname: "BookHaven",
         Pdescription: "BookHaven is a Windows Forms desktop application developed in C# to manage day-to-day bookstore operations. The system allows administrators and staff to efficiently handle book inventory, sales transactions, order tracking, and supplier management.",
         tech: ["C#", "Windows Forms", "SQL Server", "Entity Framework", "Layerd Architecture"],
@@ -131,7 +131,7 @@ export const MY_PROJECTS = [
     },
 
     {
-        image: "",
+        images: ["TravelMate1.png", "TravelMate2.png"],
         Pname: "TravelMate", 
         Pdescription: "TravelBuddy is an AI-powered chatbot designed to assist users with travel planning through a conversational interface. It offers personalized destination suggestions, helpful travel tips, and itinerary recommendations based on user preferences. The chatbot provides a smooth, context-aware interaction experience, allowing users to receive accurate and relevant travel guidance in real time. Built as a smart assistant, TravelBuddy aims to simplify the process of trip planning and improve decision-making for travelers.",
         tech: ["Python", "NLP", "Flask", "HTML", "CSS"],
@@ -139,7 +139,7 @@ export const MY_PROJECTS = [
     },  
 
     {
-        image: "/E-Commerce .png",
+        images: ["/E-Commerce .png"],
         Pname: "Earth Savior",
         Pdescription: "An e-commerce website dedicated to a social business that sells handmade soaps. The platform allows users to browse and purchase a variety of artisanal soaps, promoting sustainable and ethical products.",
         tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],

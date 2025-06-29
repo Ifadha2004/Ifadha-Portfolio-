@@ -1,85 +1,132 @@
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(15, 14, 37, 0.9);
-    backdrop-filter: blur(4px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Make sure it's on top of everything */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 14, 37, 0.9);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 .modal-content {
-    background: #1f1f3d;
-    border-radius: 12px;
-    padding: 2rem;
-    max-width: 600px;
-    width: 90%;
-    box-shadow: 0 0 20px rgba(169, 147, 254, 0.5);
-    position: relative;
-    color: white;
-    text-align: justify;
-    animation: scaleIn 0.3s ease;
+  background: #1f1f3d;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 620px;
+  width: 92%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 30px rgba(169, 147, 254, 0.7);
+  position: relative;
+  color: #f0f0ff;
+  text-align: justify;
+  animation: scaleIn 0.3s ease;
 }
 
-.modal-content img {
-    width: 100%;
-    border-radius: 8px;
-    margin: 1rem 0;
-}
-
-.tech-list {
-    text-align: left;
-    padding-left: 1rem;
-    margin-top: 1rem;
-}
-
-.tech-list li {
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-
-.github-link {
-    display: inline-block;
-    margin-top: 1.5rem;
-    background: #7c5fe6;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    transition: 0.3s ease;
-    align-items: center;
-}
-
-.github-link:hover {
-    background: transparent;
-    border: 1px solid #a993fe;
-    color: #a993fe;
+h2 {
+  margin-top: 0;
+  font-size: 1.7rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .close-btn {
-    position: absolute;
-    top: 12px;
-    right: 16px;
-    background: transparent;
-    color: #aaa;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: transparent;
+  color: #bbb;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.close-btn:hover {
+  color: #fff;
 }
 
-/* Optional animation */
+.project-carousel {
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tech list */
+.tech-list {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+  font-family: "Inter", sans-serif;
+}
+.tech-list li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* GitHub button */
+.github-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #7c5fe6;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.github-link:hover {
+  background: transparent;
+  border: 1px solid #a993fe;
+  color: #a993fe;
+}
+
+/* Swiper arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #a993fe;
+  transition: 0.3s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+/* Swiper pagination dots */
+.swiper-pagination-bullet {
+  background: #a993fe;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+  opacity: 1;
+  box-shadow: 0 0 6px #a993fe;
+}
+
+/* Modal animation */
 @keyframes scaleIn {
-    from {
-        transform: scale(0.95);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

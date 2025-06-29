@@ -39,9 +39,12 @@
 
 .container
 {
-  max-width: 1300px !important;
+  max-width: 1400px !important;
+  max-width: auto;
   margin: 0 auto;
   position: relative;
+  /* background-color: #060417; */
+  overflow: visible;
 }
 
 @media (max-width: 1300px)
@@ -51,4 +54,3 @@
     padding: 0 1.5rem;
   }
 }
-
