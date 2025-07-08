@@ -115,13 +115,13 @@ export const MY_PROJECTS = [
     },
 
     {
-        images: ["FlaskBlog.png", "BlogApplication.png"],
-        Pname: "Blogs ByIfi", 
-        Pdescription: "A simple and clean blog application built using Flask. It includes user authentication, post creation, and editing features. Designed to showcase core web development skills while offering a responsive and smooth reading experience.",
-        tech: ["Python", "Flask", "SQLite", "HTML", "CSS"],
-        ink: "https://github.com/Ifadha2004/FlaskBlog.git", 
-    },
-
+        images: ["TravelMate1.png", "TravelMate2.png"],
+        Pname: "TravelMate", 
+        Pdescription: "TravelBuddy is an AI-powered chatbot designed to assist users with travel planning through a conversational interface. It offers personalized destination suggestions, helpful travel tips, and itinerary recommendations based on user preferences. The chatbot provides a smooth, context-aware interaction experience, allowing users to receive accurate and relevant travel guidance in real time. Built as a smart assistant, TravelBuddy aims to simplify the process of trip planning and improve decision-making for travelers.",
+        tech: ["Python", "NLP", "Flask", "HTML", "CSS"],
+        link: "https://github.com/Ifadha2004/TravelMate", 
+    },  
+    
     {
         images: ["BookHaven1.png", "BookHaven2.png", "BookHaven3.png", "BookHaven4.png", "BookHaven5.png"],
         Pname: "BookHaven",
@@ -131,12 +131,12 @@ export const MY_PROJECTS = [
     },
 
     {
-        images: ["TravelMate1.png", "TravelMate2.png"],
-        Pname: "TravelMate", 
-        Pdescription: "TravelBuddy is an AI-powered chatbot designed to assist users with travel planning through a conversational interface. It offers personalized destination suggestions, helpful travel tips, and itinerary recommendations based on user preferences. The chatbot provides a smooth, context-aware interaction experience, allowing users to receive accurate and relevant travel guidance in real time. Built as a smart assistant, TravelBuddy aims to simplify the process of trip planning and improve decision-making for travelers.",
-        tech: ["Python", "NLP", "Flask", "HTML", "CSS"],
-        link: "https://github.com/Ifadha2004/TravelMate", 
-    },  
+        images: ["FlaskBlog.png", "BlogApplication.png"],
+        Pname: "Blogs ByIfi", 
+        Pdescription: "A simple and clean blog application built using Flask. It includes user authentication, post creation, and editing features. Designed to showcase core web development skills while offering a responsive and smooth reading experience.",
+        tech: ["Python", "Flask", "SQLite", "HTML", "CSS"],
+        ink: "https://github.com/Ifadha2004/FlaskBlog.git", 
+    },
 
     {
         images: ["/E-Commerce .png"],

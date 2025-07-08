@@ -6,7 +6,6 @@ const Project_Cards = ({ projects, onCardClick }) => {
     return (
         <>
             {projects.map((details, index) => {
-                // Show the first image from the array
                 const previewImage = details.images[0];
 
                 return (

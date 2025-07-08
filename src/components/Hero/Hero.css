@@ -1,4 +1,4 @@
-.hero-container
+/* .hero-container
 {
     width: 100%;
     display: flex;
@@ -7,31 +7,6 @@
     padding: 5rem 3rem; 
     overflow: hidden;
 }
-
-/* .hero-container::after,
-.hero-container::before
-{
-    content: " ";
-    width: 28.125rem;
-    height: 28.125rem;
-    border-radius: 28.125rem;
-    background: #7c66e3;
-    position: absolute;
-    z-index: -1;
-    filter: blur(150px);
-}
-
-.hero-container::after
-{
-    top: -3rem;
-    left: -5rem;
-}
-
-.hero-container::before
-{
-    bottom: 2rem;
-    right: 0rem;
-} */
 
 .hero-content
 {
@@ -81,22 +56,18 @@
     align-items: flex-end;
     gap:1rem;
     margin-top: 2rem;
-    /* right: 2px; */
 }
 
 .hero-img > div> img
 {
     width: 25rem;
     transition: all 0.3s ease;
-    /* margin-bottom: 0rem; */
     border-radius: 3rem;
 }
 
 .tech-icon
 {
-    /* width: 5rem; */
     display:flex;
-    /* margin-top: 0rem; */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -114,7 +85,6 @@
     transition: all 0.3s ease;
 }
 
-/* .hero-img >div> img:hover, */
 .tech-icon:hover
 {
     transform: translateY(-0.5rem);
@@ -231,7 +201,6 @@
     {
         width: 2rem;
         height: 2rem;
-        /* margin-right: 2px; */
         align-items: center;
         gap: 0.5px;
     }
@@ -258,4 +227,97 @@
     color: #a892fe;
     border-color: #a892fe;
     box-shadow: 0 0 15px rgba(169, 147, 254, 0.5);
+}  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* background-color: #000000; */
+}
+
+.hero-gradient {
+  /* background: linear-gradient(135deg, #000000 0%, #1c1c1c 50%, #000000 100%); */
+  background-size: 200% 200%;
+  animation: gradientAnim 10s ease infinite;
+}
+
+/* @keyframes gradientAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+.shape-blob {
+  animation: blobAnim 8s ease-in-out infinite;
+}
+
+@keyframes blobAnim {
+  0%,
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  25% {
+    transform: translate(30px, -10px) scale(0.95);
+  }
+  50% {
+    transform: translate(20px, 20px) scale(1.05);
+  }
+  75% {
+    transform: translate(-10px, 10px) scale(0.98);
+  }
+}
+
+.typing-cursor {
+  animation: blinkAnim 0.7s infinite;
+}
+
+@keyframes blinkAnim {
+  50% {
+    opacity: 0;
+  }
+}
+
+.glow-hi {
+  color: #a993fe;
+  /* text-shadow: 0 0 15px #a993fe, 0 0 15px #a993fe; */
+}
+
+.glow-dev {
+  text-shadow: 0 0 10px #a993fe, 0 0 25px #a993fe;
+}
+
+.download-cv-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  border: 2px solid #a993fe;
+  border-radius: 0.6rem;
+  background: linear-gradient(135deg, #a993fe 0%, #7e61e7 100%);
+  box-shadow: 0 0 10px rgba(169, 147, 254, 0.4);
+  transition: all 0.3s ease;
+}
+
+.download-cv-btn:hover {
+  background: transparent;
+  color: #a993fe;
+  box-shadow: 0 0 20px rgba(169, 147, 254, 0.6);
+  transform: translateY(-3px);
+}
+
+/* optional: if you want glow like the 'Hi' */
+.glow-btn {
+  text-shadow: 0 0 10px #a993fe, 0 0 25px #a993fe;
+}
+
+.glow-ring {
+  box-shadow: 0 0 5px #a993fe, 0 0 5px #a993fe, 0 0 40px rgba(169, 147, 254, 0.4);
+  transition: all 0.3s ease-in-out;
 }

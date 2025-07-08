@@ -39,8 +39,7 @@
 
 .container
 {
-  max-width: 1400px !important;
-  max-width: auto;
+  max-width: 1500px !important;
   margin: 0 auto;
   position: relative;
   /* background-color: #060417; */

@@ -71,6 +71,9 @@ h2 {
   padding-left: 1.2rem;
   margin-top: 1rem;
   font-family: "Inter", sans-serif;
+  list-style-type: disc; 
+  list-style-position: inside; 
+  color: #ffffff; 
 }
 .tech-list li {
   margin-bottom: 0.4rem;
