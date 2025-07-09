@@ -55,7 +55,7 @@ import { TypewriterEffect } from '../ui/typewriter-effect';
 
 const words = [
   {
-    text: "Full",
+    text: "Full -",
   },
   {
     text: "Stack",

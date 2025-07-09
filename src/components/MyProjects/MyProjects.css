@@ -25,7 +25,7 @@
 }
 
 .Projects {
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@
     overflow-x: auto;  /* Enable horizontal scroll */
     scroll-behavior: smooth;  /* Smooth scrolling */
     padding-bottom: 1rem;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 
 .horizontal-scroll::-webkit-scrollbar {

@@ -75,3 +75,18 @@
   color: #ffffff;
   font-weight: 600;
 }
+
+.project-grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 640px) {
+  .project-grid-wrapper {
+    gap: 1.2rem;
+    padding: 1rem;
+  }
+}
