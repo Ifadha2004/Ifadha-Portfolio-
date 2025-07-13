@@ -1,53 +1,3 @@
-// import React from "react";
-// import './Hero.css';
-// import { FaHtml5, FaCss3Alt, FaPython, FaJava, FaPhp, FaReact } from "react-icons/fa";
-// import { IoLogoJavascript } from "react-icons/io5";
-// import { SiMicrosoftsqlserver, SiMysql } from "react-icons/si";
-
-// const Hero = () => {
-//     return (
-//             <section className="hero-container relative z-10 h-[100vh] overflow-visible flex items-center justify-center">
-//                 {/* CONTENT */}
-//                 <div className="hero-content relative z-10 text-center text-white">
-//                     <h2>Hi, I am</h2>
-//                     <h2>Mohamed Imran Ifadah</h2>
-//                     <p>Graduated Software Engineer</p>
-//                     <a
-//                         href="/IFADHA_CV.pdf"
-//                         download="Mohamed_Imran_Ifadha_CV.pdf"
-//                         className="download-cv-btn"
-//                     >
-//                         Download CV
-//                     </a>
-//                 </div>
-
-//                 <div className="hero-img relative z-10">
-//                     <div className="relative w-fit mx-auto">
-//                         <img
-//                         src="./Meee.png"
-//                         alt="profile"
-//                         className="rounded-3xl w-[350px] h-[460px] absolute top-0 left-0 z-10 object-cover"
-//                         />
-//                     </div>
-
-//                     <div className="tech-stack mt-4 flex flex-wrap justify-center gap-3">
-//                         <div className="tech-icon"><FaPython style={{ fontSize: '30px' }} /></div>
-//                         <div className="tech-icon"><FaJava style={{ fontSize: '30px' }} /></div>
-//                         <div className="tech-icon"><FaHtml5 style={{ fontSize: '30px' }} /></div>
-//                         <div className="tech-icon"><FaCss3Alt style={{ fontSize: '30px' }} /></div>
-//                         <div className="tech-icon"><FaPhp style={{ fontSize: '30px' }} /></div>
-//                         <div className="tech-icon"><FaReact style={{ fontSize: '30px' }} /></div>
-//                         <div className="tech-icon"><IoLogoJavascript style={{ fontSize: '30px' }} /></div>
-//                         <div className="tech-icon"><SiMicrosoftsqlserver style={{ fontSize: '30px' }} /></div>
-//                         <div className="tech-icon"><SiMysql style={{ fontSize: '30px' }} /></div>
-//                     </div>
-//                 </div>
-//             </section>
-//     );
-// };
-
-// export default Hero;
-
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
 import { Spotlight } from '../ui/spotlight-new';
@@ -55,14 +5,13 @@ import { TypewriterEffect } from '../ui/typewriter-effect';
 
 const words = [
   {
-    text: "Full -",
+    text: "Full-Stack",
   },
   {
-    text: "Stack",
+    text: "\u00A0",
   },
   {
     text: "Developer",
-    // className: "text-blue-500 dark:text-blue-500",
     className: "text-gray-100 glow-dev",
   },
 ];
@@ -115,6 +64,13 @@ const Hero = () => {
             </a>
             <button
               className="px-8 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-300"
+              onClick={() =>{
+                const contactSection = document.getElementById('contact');
+                if (contactSection)
+                {
+                  contactSection.scrollIntoView({behavior : "smooth"});
+                }
+              }}
             >
               Contact Me
             </button>
