@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Hero.css';
 import { Spotlight } from '../ui/spotlight-new';
 import { TypewriterEffect } from '../ui/typewriter-effect';

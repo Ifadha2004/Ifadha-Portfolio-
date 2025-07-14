@@ -110,7 +110,7 @@ export const MY_PROJECTS = [
         images: ["DreamDay1.png", "DreamDay2.png", "DreamDay3.png", "DreamDay4.png", "DreamDay5.png"],
         Pname: "DreamDay",
         Pdescription: "A complete wedding planning web application built using ASP.NET MVC. It allows couples to register, plan events, book vendors, and manage tasks easily. Designed with user roles and a clean admin dashboard for efficient event organization.",
-        tech: ["ASP.NET MVC", "C#", "Entity Framework", "SQL Server", "Bootstrap"],
+        tech: ["ASP.NET MVC", "C#", "Entity Framework", "MySQL", "Bootstrap"],
         link: "https://github.com/Ifadha2004/WeddingPlanner_DreamDay",
     },
 

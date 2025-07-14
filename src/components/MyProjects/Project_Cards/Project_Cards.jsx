@@ -36,7 +36,7 @@ import './Project_Cards.css';
 import { CardContainer, CardBody, CardItem } from "../../ui/3d-card";
 import { HiBarsArrowUp } from "react-icons/hi2";
 
-const Project_Cards = ({ projects, onCardClick }) => {
+const ProjectCards = ({ projects, onCardClick }) => {
   return (
     <div className="project-grid-wrapper">
       {projects.map((details, index) => {
@@ -84,4 +84,4 @@ const Project_Cards = ({ projects, onCardClick }) => {
   );
 };
 
-export default Project_Cards;
+export default ProjectCards;
