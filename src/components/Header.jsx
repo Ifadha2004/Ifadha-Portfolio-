@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "./ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { IconHome, IconUser } from "@tabler/icons-react";
 import { HiAcademicCap } from "react-icons/hi2";
 import { BiAbacus } from "react-icons/bi";
 import { GrCertificate } from "react-icons/gr";
