@@ -51,7 +51,8 @@ const Hero = () => {
           </div>
 
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
-            I create beautiful, performant digital experiences focusing on user-centered design and clean code. Currently specializing in React ecosystems and design systems.
+            {/* I create beautiful, performant digital experiences focusing on user-centered design and clean code. Currently specializing in React ecosystems and design systems. */}
+            As a dedicated full-stack developer, I craft end-to-end digital solutions with a strong focus on clean, maintainable code and user-centric design—delivering experiences that are both visually compelling and technically robust.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
