@@ -25,6 +25,8 @@
 
 .AboutMe-img img:hover {
     transform: translateY(-0.5rem);
+    filter: brightness(1.12);
+    cursor: pointer;
 }
 
 .AboutMe-Content {
