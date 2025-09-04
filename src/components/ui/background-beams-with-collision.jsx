@@ -83,7 +83,7 @@ const CollisionMechanism = React.forwardRef(
 
       const interval = setInterval(checkCollision, 50);
       return () => clearInterval(interval);
-    }, [cycleCollisionDetected, containerRef]);
+    }, [cycleCollisionDetected, containerRef, parentRef]);
 
     useEffect(() => {
       if (collision.detected && collision.coordinates) {
