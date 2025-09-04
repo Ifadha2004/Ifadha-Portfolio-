@@ -58,3 +58,41 @@ form button:hover {
     color: #a892fe;
     border: 1.5px solid #a892fe;
 }
+
+/* --- Hover swap mechanics (SEND → left, icon → from right) --- */
+.send-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;      /* label centered by default */
+  gap: 0.6rem;
+  overflow: hidden;
+
+  /* give room on the right for the icon when it appears */
+  padding-right: 2.6rem;
+}
+
+/* icon hidden initially, off to the right */
+.send-btn__icon {
+  position: absolute;           /* doesn't affect centering */
+  right: 2rem;
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: translateX(6px) scale(0.95);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+/* label will nudge left on hover */
+.send-btn__label {
+  transition: transform 200ms ease;
+}
+
+/* on hover: reveal icon from right, slide label left */
+.send-btn:hover .send-btn__icon {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.send-btn:hover .send-btn__label {
+  transform: translateX(-10px);
+}
