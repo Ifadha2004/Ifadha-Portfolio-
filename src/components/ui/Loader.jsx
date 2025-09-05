@@ -97,7 +97,7 @@ const INTRO_DURATION = 4400;
 
 const Loader = ({ onDone }) => {
   const [typedText, setTypedText] = useState("");
-  const fullText = "< CraftingSolutions />";
+  const fullText = "<  CraftingSolutions/>";
 
   useEffect(() => {
     let i = 0;
