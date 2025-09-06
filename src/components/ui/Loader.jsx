@@ -5,21 +5,37 @@ import { BackgroundBeamsWithCollision } from "./background-beams-with-collision"
 const INTRO_DURATION = 4400;
 
 const Loader = ({ onDone }) => {
-  const [typedText, setTypedText] = useState("");
-  const fullText = "< CraftingSolutions />";
+  // const [typedText, setTypedText] = useState("");
+  const fullText = "<CraftingSolutions />";
+  const [idx, setIdx] = useState(0);
+
+  // useEffect(() => {
+  //   let i = 0;
+  //   setTypedText(fullText.charAt(0));
+  //   i = 1;
+
+  //   const typer = setInterval(() => {
+  //     if (i < fullText.length) {
+  //       setTypedText((prev) => prev + fullText.charAt(i));
+  //       i++;
+  //     } else {
+  //       clearInterval(typer);
+  //     }
+  //   }, 100);
+
+  //   const t = setTimeout(() => onDone?.(), INTRO_DURATION);
+  //   return () => {
+  //     clearInterval(typer);
+  //     clearTimeout(t);
+  //   };
+  // }, [onDone]);
 
   useEffect(() => {
     let i = 0;
-    setTypedText(fullText.charAt(0));
-    i = 1;
-
     const typer = setInterval(() => {
-      if (i < fullText.length) {
-        setTypedText((prev) => prev + fullText.charAt(i));
-        i++;
-      } else {
-        clearInterval(typer);
-      }
+      i += 1;
+      setIdx(i);
+      if (i >= fullText.length) clearInterval(typer);
     }, 100);
 
     const t = setTimeout(() => onDone?.(), INTRO_DURATION);
@@ -27,7 +43,7 @@ const Loader = ({ onDone }) => {
       clearInterval(typer);
       clearTimeout(t);
     };
-  }, [onDone]);
+  }, [onDone, fullText]);
 
   return (
     <AnimatePresence>
@@ -58,7 +74,7 @@ const Loader = ({ onDone }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {typedText}
+          {fullText.slice(0, idx)}
           <motion.span
             className="inline-block w-1 bg-indigo-300 ml-1"
             animate={{ opacity: [0, 1, 0] }}
