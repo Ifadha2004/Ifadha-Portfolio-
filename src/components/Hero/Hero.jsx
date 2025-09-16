@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto relative z-10 text-center">
           <div className="mx-auto h-40 w-40 rounded-full overflow-hidden border-4 border-white/10 shadow-xl mb-8 glow-ring">
             <img
-              src="./Meee.png"
+              src="./4Z7A9620.jpg"
               alt="Ifadha Imran"
               className="h-full w-full object-cover"
             />
