@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 import './App.css';
 // Component Imports
 import Loader from './components/ui/Loader';
@@ -20,6 +22,15 @@ const App = () => {
     if (hasSeenIntro) {
       setShowLoader(false);
     }
+
+    // ✅ AOS init here
+    AOS.init({
+      duration: 900,  // animation speed     
+      offset: 120,     // start animation before element is fully in viewport
+      easing: "ease-in-out",
+      once: false,
+      mirror: true,
+    });
   }, []);
 
   const handleIntroDone = () => {

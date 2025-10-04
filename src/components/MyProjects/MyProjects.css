@@ -47,3 +47,22 @@
     -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
     scrollbar-width: none;  /* Hide scrollbar for Firefox */
 }
+
+/* Make title visible and consistent */
+.projects-title {
+  color: #fff;
+}
+
+/* Optional: smooth horizontal scroller with snapping */
+.horizontal-scroll {
+  scroll-snap-type: x mandatory;
+  gap: 1.25rem;
+}
+
+/* Each card should snap to start */
+.project-card {
+  scroll-snap-align: start;
+  /* start hidden so GSAP can animate cleanly if needed */
+  opacity: 0;
+  will-change: transform, opacity;
+}

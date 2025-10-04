@@ -321,3 +321,13 @@ body {
   box-shadow: 0 0 5px #a993fe, 0 0 5px #a993fe, 0 0 40px rgba(169, 147, 254, 0.4);
   transition: all 0.3s ease-in-out;
 }
+
+
+/* Performance hints */
+.will-change-transform { will-change: transform; }
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .shape-blob { animation: none !important; }
+  .hero-gradient { animation: none !important; }
+}

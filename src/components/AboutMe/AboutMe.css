@@ -130,3 +130,8 @@
         line-height: 1.4rem;
     }
 }
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .AboutMe-img img { transition: none !important; }
+}
