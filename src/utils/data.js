@@ -145,4 +145,24 @@ export const MY_PROJECTS = [
         tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
         link: "",
     },
+
+    {
+        images: ["/E-Commerce .png"],
+        Pname: "Full-Stack Task Management System",
+        Pdescription: "TaskFlow is a full-stack task management system built with React, TypeScript, Node.js, Express, and PostgreSQL, featuring secure JWT authentication, role-based access control, and a polished admin dashboard. Users can create, assign, update, and track tasks with real-time UI feedback, while admins get full control over user roles, account status, and workload insights visualized through interactive charts. The system is fully typed end-to-end with Prisma ORM and React Query, ensuring reliability, scalability, and a modern, production-ready architecture.",
+        tech: [
+            "React",
+            "TypeScript",
+            "Vite",
+            "Tailwind CSS",
+            "React Query",
+            "Node.js",
+            "Express.js",
+            "PostgreSQL",
+            "Prisma ORM",
+            "JWT Authentication",
+            "Recharts"
+            ],
+        link: "",
+    },
 ];
