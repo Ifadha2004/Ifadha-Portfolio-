@@ -135,7 +135,7 @@ export const MY_PROJECTS = [
         Pname: "Blogs ByIfi", 
         Pdescription: "A simple and clean blog application built using Flask. It includes user authentication, post creation, and editing features. Designed to showcase core web development skills while offering a responsive and smooth reading experience.",
         tech: ["Python", "Flask", "SQLite", "HTML", "CSS"],
-        ink: "https://github.com/Ifadha2004/FlaskBlog.git", 
+        ink: "https://github.com/Ifadha2004/FlaskBlog", 
     },
 
     {
@@ -163,6 +163,6 @@ export const MY_PROJECTS = [
             "JWT Authentication",
             "Recharts"
             ],
-        link: "",
+        link: "https://github.com/Ifadha2004/Task-Manager",
     },
 ];
