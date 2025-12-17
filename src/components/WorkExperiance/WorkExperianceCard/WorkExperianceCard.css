@@ -1,108 +1,93 @@
-.work-experiance-card
-{
-    background: #130f2a;
-    border-radius: 0.65rem;
-    border: 1.5px solid #6751b9;
-    padding: 1.5rem;
-    margin: 0 1rem;
-    height: 400px;
+.work-experiance-card {
+    background: rgba(19, 15, 42, 0.7); /* Translucent dark */
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-radius: 1.2rem;
+    border: 1px solid rgba(103, 81, 185, 0.3);
+    padding: 2rem;
+    margin: 1.5rem 1rem;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: border 0.3s ease;
+}
+
+/* Moving Border Glow Effect on Hover */
+.work-experiance-card:hover {
+    border: 1px solid #a993fe;
+    box-shadow: 0 10px 30px rgba(123, 97, 255, 0.2);
+}
+
+.card-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(169, 147, 254, 0.1) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .work-experiance-card h6 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.7rem;
-    padding: 0.4rem 0.6rem;
-    /* The linear gradient should match the colors and style of your logo */
-    background: linear-gradient(to right, 
-                                #ff0057, 
-                                #2a82f7, 
-                                #f7b539, 
-                                #34f5c5, 
-                                #d247fc);
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #fff, #a993fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
 }
 
-.University
-{
-    font-size: 1rem;
-    /* background: rgba(103, 81, 185, 0.5);
-    border-radius: 0.3rem;
-    padding: 0.4rem 0.6rem; */
-    /* text-align: center; */
+.university-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
 }
 
-.date
-{
+.uni-icon {
+    font-size: 1.2rem;
+}
+
+.University {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.date-badge {
     display: inline-block;
-    font-size: 1rem;
-    font-weight: 400;
-    background: rgba(103, 81, 185, 0.5);
-    border-radius: 0.3rem;
-    padding: 0.4rem 0.6rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem; 
-    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #a993fe;
+    background: rgba(169, 147, 254, 0.1);
+    border: 1px solid rgba(169, 147, 254, 0.3);
+    border-radius: 2rem;
+    padding: 0.4rem 1.2rem;
+    margin-bottom: 1.5rem;
+    width: fit-content;
 }
 
-.work-experiance-card p
-{
-    list-style: none;
-    font-size: 0.90rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-    position: relative;
-    line-height: 1.7rem;
-    /* margin-left: 1.5rem; */
-    /* margin-right: 2rem; */
+.description {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.6;
     text-align: justify;
-
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Limits text height for UI consistency */
+    -webkit-box-orient: vertical;
 }
 
-@media (max-width: 1024px)
-{
-    .work-experiance-card
-    {
-        height: 430px;
-    }
-    .work-experiance-card p 
-    {
-        font-size: 0.78rem;
-        line-height: 1.4rem;
-    }
+/* Slider Overrides for better spacing */
+.experiance-content .slick-list {
+    padding: 20px 0;
 }
 
-@media (max-width: 768px)
-{
-    .work-experiance-card{
-        height: 350px;
-    }
-
-    .work-experiance-card h6 
-    {
-        font-size: 1.4rem;
-    }
-
-    .work-experiance-card p
-    {
-        /* font-size: 0.50rem; */
-        line-height: 1.5rem;
+@media (max-width: 768px) {
+    .work-experiance-card {
+        height: auto;
+        min-height: 380px;
     }
 }
-
-@media (max-width: 600px)
-{
-    .work-experiance-card
-    {
-        height: 550px;
-    }
-
-    .work-experiance-card p 
-    {
-        line-height: 1.6rem;
-    }
-}
-

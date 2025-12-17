@@ -82,8 +82,9 @@ const WorkExperiance = () => {
 
   const settings = {
     dots: true,
+    // dotsClass: "slick-dots custom-progress-bar",
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
