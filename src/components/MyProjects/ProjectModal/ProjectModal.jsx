@@ -77,7 +77,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import { motion, AnimatePresence } from "framer-motion";
-import { HiX, HiOutlineCode, HiOutlineExternalLink } from "react-icons/hi";
+import { HiX, HiOutlineCode } from "react-icons/hi";
 import './ProjectModal.css';
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
