@@ -61,7 +61,7 @@ export const WORK_EXPERIENCE = [
     {
         title: "MSc in Data Science and AI",
         university: "Middlesex University Dubai",
-        date: "(2025 September - Present)",
+        date: "(2026 January - Present)",
         description: "Currently pursuing a Master of Science specializing in Data Science and Artificial Intelligence. The program focuses on advanced machine learning algorithms, big data analytics, and neural networks. I am developing expertise in transforming complex data sets into actionable insights and building intelligent systems that solve intricate real-world problems.",
     },
     {
