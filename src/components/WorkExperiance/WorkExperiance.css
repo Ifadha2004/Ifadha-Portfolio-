@@ -1,8 +1,8 @@
-.experiance-container
-{
+.experiance-container {
     width: 100%;
-    padding: 5rem 3rem; 
-    margin: 4rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
     position: relative;
 }
 
@@ -17,140 +17,76 @@
     margin-left: 4rem;
 }
 
-.arrow-left, 
-.arrow-right
-{
-    width: 2.2rem;
-    height: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #6751b9;
-    border-radius: 0.65rem;
-    border: 1.5px solid #6751b9;
-    background: #130f2a;
+.timeline-content {
+    position: relative;
+    margin-top: 4rem;
+    padding-left: 3rem; /* Space for the line on the left */
+}
+
+/* The fixed background line (faint) */
+.timeline-content::before {
+    content: '';
     position: absolute;
-    top: 55%;
-    z-index: 2;
-    cursor: pointer;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(169, 147, 254, 0.1);
 }
 
-.arrow-left span,
-.arrow-right span
-{
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.arrow-left
-{
-    left: -2rem;
-}
-
-.arrow-right
-{
-    right: -2rem;
-}
-
-
-/* ---------------------------------- */
-
-.experiance-container .slick-prev, 
-.experiance-container .slick-next {
+/* The animated glowing line */
+.timeline-line {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px; /* Adjust width as needed */
-    height: 40px; /* Adjust height as needed */
-    background-color: rgba(0, 0, 0, 0.5); 
-    border-radius: 50%; /* Makes the arrow buttons circular */
-    border-color: #6751b9;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #a993fe, #7b61ff);
+    box-shadow: 0 0 15px #a993fe;
+    transform-origin: top;
     z-index: 1;
-    cursor: pointer;
+}
+
+.timeline-items {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-/* Position the previous arrow to the left */
-.experiance-container .slick-prev {
-    left: -50px; /* Adjust left position as needed */
+.timeline-item-wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
 }
 
-/* Position the next arrow to the right */
-.experiance-container .slick-next {
-    right: -50px; /* Adjust right position as needed */
+/* The glowing node on the timeline */
+.timeline-dot {
+    position: absolute;
+    left: -32px; /* Centers it on the line at 8px */
+    top: 40px;
+    width: 18px;
+    height: 18px;
+    background: #130f2a;
+    border: 3px solid #a993fe;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 10px #a993fe;
 }
 
-/* Customize the arrow icon itself */
-.experiance-container .slick-prev:before, 
-.experiance-container .slick-next:before {
-    font-size: 20px; /* Size of the arrow icon */
-    color: #ffffff; /* Color of the arrow icon */
-    content: ''; /* Remove default content */
+.card-wrapper {
+    width: 100%;
 }
 
-/* Add custom arrow icons */
-.experiance-container .slick-prev:before {
-    content: '←'; /* Left arrow icon */
-}
-
-.experiance-container .slick-next:before {
-    content: '→'; /* Right arrow icon */
-}
-
-@media (max-width: 768px)
-{
-    .experiance-container h5 
-    {
-        text-align: center;
-        margin-left: 2px;
+@media (max-width: 768px) {
+    .timeline-content {
+        padding-left: 2rem;
     }
-}
-
-@media (max-width: 425px)
-{
-    .experiance-container h5 
-    {
-        text-align: center;
-        /* margin-left: px; */
+    .timeline-dot {
+        left: -24px;
+        width: 14px;
+        height: 14px;
     }
-}
-
-/* Container for the dots */
-.experiance-container .slick-dots {
-  position: absolute;
-  bottom: -50px;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  gap: 12px;
-}
-
-/* Base style for inactive dots */
-.experiance-container .slick-dots li {
-  width: 10px;
-  height: 10px;
-  background: rgba(169, 147, 254, 0.2); /* Faded purple */
-  border-radius: 20px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  cursor: pointer;
-  position: relative;
-}
-
-/* Active "Pill" style */
-.experiance-container .slick-dots li.slick-active {
-  width: 35px; /* Expands into a pill */
-  background: linear-gradient(90deg, #a993fe, #7b61ff);
-  box-shadow: 0 0 15px rgba(169, 147, 254, 0.6);
-}
-
-/* Hide the default button text */
-.experiance-container .slick-dots li button:before {
-  display: none;
+    .timeline-content::before, .timeline-line {
+        left: 4px;
+    }
 }

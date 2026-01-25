@@ -59,25 +59,28 @@ export const SKILLS = [
 
 export const WORK_EXPERIENCE = [
     {
-        title: "BEng (Hons) Software Engineering - Top-Up",
-        university: "London Metropoliton University",
-        date: "(2024 September - 2025 September)",
-        description: "I am currently pursuing a BEng (Hons) Software Engineering Top-Up degree, where I am building on my foundational knowledge in computing. The program covers advanced topics such as Project Analysis & Practice, Advanced Software Engineering, and Artificial Intelligence. My final year involves a comprehensive research project, allowing me to apply theoretical concepts to real-world unique challenges, showcasing my capabilities in modern software development practices.",
-
+        title: "MSc in Data Science and AI",
+        university: "Middlesex University Dubai",
+        date: "(2025 September - Present)",
+        description: "Currently pursuing a Master of Science specializing in Data Science and Artificial Intelligence. The program focuses on advanced machine learning algorithms, big data analytics, and neural networks. I am developing expertise in transforming complex data sets into actionable insights and building intelligent systems that solve intricate real-world problems.",
     },
-
     {
-        title: " Pearson BTEC Level 5 HND in Computing, Specialized in Software Engineering",
+        title: "BEng (Hons) Software Engineering",
+        university: "London Metropolitan University",
+        date: "(2024 September - 2025 September)",
+        description: "Successfully completed my BEng (Hons) degree with a focus on advanced software architecture and AI integration. My final year research project allowed me to apply theoretical concepts to unique software challenges, demonstrating my capability to deliver production-grade code and modern development practices.",
+    },
+    {
+        title: "Pearson BTEC Level 5 HND in Computing (Software Engineering)",
         university: "Esoft Metro Campus",
         date: "(2022 October - 2024 February)", 
-        description: "I completed the Pearson BTEC Level 5 HND in Computing, specializing in Software Engineering, where I gained practical skills and in-depth knowledge across multiple areas of computing. The program was structured into four semesters, covering essential topics such as Programming, Networking, Database Design, Security, Software Development Lifecycle, and many more. My studies culminated in a computer research project, providing me with a strong foundation in both theoretical and applied aspects of software engineering.",
+        description: "Completed a comprehensive HND program specializing in Software Engineering. Gained in-depth knowledge in Database Design, Security, and the Software Development Lifecycle. The program culminated in a computer research project that solidified my foundation in both theoretical and applied aspects of computing.",
     },
-
     {
         title: "Diploma in Information Technology",
         university: "Esoft Metro Campus",
         date: "(2021 - 2022 June)", 
-        description: "My Diploma in Information Technology laid the groundwork for my expertise in computing. The program equipped me with fundamental skills in IT, preparing me for more advanced studies in software engineering. This diploma served as a stepping stone in my academic journey, fostering a strong understanding of the core principles of information technology.",
+        description: "Equipped with fundamental skills in IT, providing the essential groundwork for my journey into software engineering. This program fostered a strong understanding of core computing principles and prepared me for advanced academic and technical challenges.",
     },
 ];
 

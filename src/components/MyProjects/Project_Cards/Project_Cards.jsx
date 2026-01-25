@@ -1,36 +1,3 @@
-// import React from 'react';
-// import './Project_Cards.css';
-// import { HiBarsArrowUp } from "react-icons/hi2";
-// import { ThreeDCardDemo } from "../../ui/3DCard";
-
-// const Project_Cards = ({ projects, onCardClick }) => {
-//     return (
-//         <>
-//             {projects.map((details, index) => {
-//                 const previewImage = details.images[0];
-
-//                 return (
-                    
-//                     <div key={index} className='project-card' onClick={() => onCardClick(details)}>
-//                         <div>
-//                             <img src={previewImage} alt={details.Pname} />
-//                         </div>
-//                         <div className="card-title-bar">
-//                             <h3>{details.Pname}</h3>
-//                             <button className='model-open'>
-//                                 <HiBarsArrowUp />
-//                             </button>       
-//                         </div>
-//                     </div>                    
-//                 );
-//             })}
-//         </>
-//     );
-// };
-
-// export default Project_Cards;
-
-// ✅ Step 1: Import the 3D Card modules
 import React from 'react';
 import './Project_Cards.css';
 import { CardContainer, CardBody, CardItem } from "../../ui/3d-card";
