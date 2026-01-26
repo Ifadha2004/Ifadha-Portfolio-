@@ -34,7 +34,7 @@ const ContactMe = () => {
 
                 <ContactInfoCard 
                     icon={<FaWhatsappSquare />} //Pass the WhatsApp icon
-                    text="+94 076 208 3634"
+                    text="+94 076 208 3634 / +971 56 482 3989"
                 />
                 </div>
 

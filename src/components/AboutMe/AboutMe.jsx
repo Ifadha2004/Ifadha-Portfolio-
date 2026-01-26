@@ -79,11 +79,11 @@ const AboutMe = () => {
         <h5 data-aos="zoom-in" data-aos-delay="320">About Me</h5>
 
         <p data-aos="fade-up" data-aos-delay="380">
-          Welcome to my portfolio! I'm Mohamed Imran Ifadah, a passionate and dedicated Software Engineer with a solid foundation in technology and a strong interest in innovation. I enjoy transforming ideas into practical solutions using modern tools and clean code.
+          Hi, I’m Mohamed Imran Ifadah, a Software Engineer with 2 years of hands-on experience as a Full-Stack Developer. I enjoy building clean, scalable, and user-focused applications using modern technologies.
         </p>
 
         <p data-aos="fade-up" data-aos-delay="460">
-          I have completed my Higher National Diploma (HND) in Software Engineering and earned my BEng (Hons) in Software Engineering. These academic milestones have strengthened my skills in languages and technologies such as Java, Python, C#, HTML, CSS, PHP, JavaScript, SQL, and React.js. I’m also exploring the exciting possibilities of Artificial Intelligence and Full-Stack Development.
+          I have successfully completed my BEng (Hons) in Software Engineering at London Metropolitan University and I am currently pursuing an MSc in Data Science and Artificial Intelligence at Middlesex University Dubai. My background spans Java, Python, C#, JavaScript, React, SQL, and web technologies, with a growing focus on data-driven and AI-powered solutions.
         </p>
 
         <p data-aos="fade-up" data-aos-delay="540">
