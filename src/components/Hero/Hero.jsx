@@ -151,7 +151,7 @@ const Hero = () => {
             <motion.a
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.98 }}
-              href="/Ifadha_Resume.pdf"
+              href="/Mohamed-Imran-Ifadha-Resume.pdf"
               className="primary-action-btn"
             >
               Download CV
