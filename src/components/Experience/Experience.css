@@ -1,0 +1,126 @@
+.experience-section {
+    padding: 80px 0;
+    position: relative;
+    background: transparent;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(169, 147, 254, 0.3);
+}
+
+.name-gradient {
+    background: linear-gradient(90deg, #fff, #a993fe, #7b61ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Add a background blob behind the grid like in your Hero section */
+.experience-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(169, 147, 254, 0.05) 0%, transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.experience-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Glassmorphism Card */
+.experience-card {
+    position: relative;
+    padding: 2.5rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(169, 147, 254, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(169, 147, 254, 0.4);
+}
+
+.card-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 0% 0%, rgba(169, 147, 254, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.role-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.company-name {
+    font-size: 1.1rem;
+    color: #a993fe;
+    font-weight: 500;
+}
+
+.experience-period {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+    padding: 0.4rem 1rem;
+}
+
+/* List Styling */
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.bullet-point {
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    width: 6px;
+    height: 6px;
+    background: #a993fe;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #a993fe;
+}
+
+@media (max-width: 768px) {
+    .section-title { font-size: 2.2rem; }
+    .role-title { font-size: 1.5rem; }
+    .experience-card { padding: 1.5rem; }
+}

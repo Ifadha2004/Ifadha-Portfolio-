@@ -1,75 +1,58 @@
-.contact-container
-{
-    width: 90%;
-    padding: 2rem 2rem;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
-    flex-wrap: wrap;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-    border-radius: 1rem;
-    box-shadow: 0 0 25px rgba(169, 147, 254, 0.15);
-}
-
-.cards
-{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    gap: 1.5rem;
-    min-width: 300px;
-}
-
-.contact-content 
-{
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem;
-    flex-wrap: wrap;
+.contact-container {
     width: 100%;
+    max-width: 1200px;
+    margin: 6rem auto;
+    padding: 0 2rem;
 }
 
-.contact-content h5 
-{
-    font-size: 2.5rem;
-    font-weight: 700;
+.contact-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+/* Typography */
+.contact-info-section h5 {
+    font-size: 3rem;
+    font-weight: 800;
     margin-bottom: 1.5rem;
-    text-shadow: 0 0 10px #a993fe, 0 0 25px #a993fe;
-    text-align: center;
+    color: #fff;
+    text-align: left;
 }
 
-.contact-content p 
-{
-    font-size: 1rem;
-    line-height: 1.8rem;
-    color: #eee;
+.contact-intro {
+    font-size: 1.05rem;
+    color: #94a3b8;
+    line-height: 1.8;
+    margin-bottom: 3rem;
     text-align: justify;
 }
 
-.letsTalk
-{
-    flex: 1;
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+/* Info Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
 }
 
-@media (max-width: 768px)
-{
-    .contact-content
-    {
-        flex-direction: column-reverse;
-    }
+/* Form Container Polish */
+.form-glass-container {
+    background: rgba(19, 15, 42, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(169, 147, 254, 0.2);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
 
-    .contact-content h5
-    {
-        font-size: 2.2rem;
-        /* margin-bottom: 0rem; */
+@media (max-width: 992px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .contact-info-section h5 {
+        text-align: center;
+        font-size: 2.5rem;
     }
 }

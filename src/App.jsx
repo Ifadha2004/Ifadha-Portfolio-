@@ -7,6 +7,7 @@ import Loader from './components/ui/Loader';
 import Hero from './components/Hero/Hero';
 import AboutMe from './components/AboutMe/AboutMe';
 import Skills from './components/Skills/Skills';
+import ProfessionalExperience from './components/Experience/Experience';
 import WorkExperience from './components/WorkExperiance/WorkExperiance';
 import MyProjects from './components/MyProjects/MyProjects';
 import ContactMe from './components/ContactMe/ContactMe';
@@ -50,6 +51,9 @@ const App = () => {
           <main className="container">
             <section id="hero"><Hero /></section>
             <section id="about"><AboutMe /></section>
+            <section id="experience">
+              <ProfessionalExperience />
+            </section>
             <section id="skills"><Skills /></section>
             <section id="experience"><WorkExperience /></section>
             <section id="projects"><MyProjects /></section>
