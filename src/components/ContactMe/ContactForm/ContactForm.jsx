@@ -59,13 +59,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BsFillSendFill, BsCheckCircleFill, BsExclamationTriangleFill } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 
-const NAME_REGEX = /^[A-Za-z][A-Za-z\s'’-]{1,39}$/; // letters + spaces + ' or –; 2–40 chars
+const NAME_REGEX = /^[A-Za-z][A-Za-z\s'’-]{1,39}$/;
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Standard email validation
 const MIN_SUBJECT = 3;
 const MIN_MESSAGE = 10;
 
-// Simple toast component (success / error) shown bottom-right
 const Toast = ({ open, type, title, text, onClose, duration = 3800 }) => {
-  // auto close
   useEffect(() => {
     if (!open) return;
     const t = setTimeout(onClose, duration);
@@ -105,27 +104,28 @@ const ContactForm = () => {
   const form = useRef();
   const [errors, setErrors] = useState({});
   const [sending, setSending] = useState(false);
-
-  // toast state
   const [toast, setToast] = useState({ open: false, type: "success", title: "", text: "" });
+
   const showToast = (type, title, text) => setToast({ open: true, type, title, text });
 
   const validate = (vals) => {
     const e = {};
 
     if (!vals.firstname) e.firstname = "First name is required.";
-    else if (!NAME_REGEX.test(vals.firstname)) e.firstname = "Use 2–40 letters (spaces/’/–).";
+    else if (!NAME_REGEX.test(vals.firstname)) e.firstname = "Use 2–40 letters.";
 
     if (!vals.lastname) e.lastname = "Last name is required.";
-    else if (!NAME_REGEX.test(vals.lastname)) e.lastname = "Use 2–40 letters (spaces/’/–).";
+    else if (!NAME_REGEX.test(vals.lastname)) e.lastname = "Use 2–40 letters.";
+
+    // Added email validation
+    if (!vals.email) e.email = "Email address is required.";
+    else if (!EMAIL_REGEX.test(vals.email)) e.email = "Please enter a valid email.";
 
     if (!vals.subject) e.subject = "Subject is required.";
-    else if (vals.subject.length < MIN_SUBJECT)
-      e.subject = `Subject must be at least ${MIN_SUBJECT} characters.`;
+    else if (vals.subject.length < MIN_SUBJECT) e.subject = `Min ${MIN_SUBJECT} characters.`;
 
     if (!vals.message) e.message = "Message is required.";
-    else if (vals.message.length < MIN_MESSAGE)
-      e.message = `Message must be at least ${MIN_MESSAGE} characters.`;
+    else if (vals.message.length < MIN_MESSAGE) e.message = `Min ${MIN_MESSAGE} characters.`;
 
     return e;
   };
@@ -133,13 +133,16 @@ const ContactForm = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
 
+    // 1. Capture values for validation
     const vals = {
       firstname: form.current.firstname.value.trim(),
       lastname: form.current.lastname.value.trim(),
+      email: form.current.email.value.trim(),
       subject: form.current.subject.value.trim(),
       message: form.current.message.value.trim(),
     };
 
+    // 2. Validate
     const eMap = validate(vals);
     setErrors(eMap);
 
@@ -148,22 +151,29 @@ const ContactForm = () => {
       return;
     }
 
-    try {
-      setSending(true);
-      await emailjs.sendForm(
-        "service_930vljm",
+    // 3. Send using the simple .then() pattern which EmailJS prefers
+    setSending(true);
+
+    emailjs
+      .sendForm(
+        "service_1iez5or",
         "template_bsw2dyt",
-        form.current,
+        form.current, // Ensure this points to the form element
         "iAFQ12-l5fVMPQ4Yk"
+      )
+      .then(
+        (result) => {
+          setSending(false);
+          showToast("success", "Success Notification", "Your message has been sent.");
+          form.current.reset();
+          setErrors({});
+        },
+        (error) => {
+          setSending(false);
+          console.error("FAILED...", error.text); // This will tell you EXACTLY why in the console
+          showToast("error", "Error Notification", "Something went wrong. Please try again.");
+        }
       );
-      showToast("success", "Success Notification", "Your message has been sent.");
-      form.current.reset();
-      setErrors({});
-    } catch {
-      showToast("error", "Error Notification", "Something went wrong. Please try again.");
-    } finally {
-      setSending(false);
-    }
   };
 
   return (
@@ -174,23 +184,28 @@ const ContactForm = () => {
             type="text"
             name="firstname"
             placeholder="First Name"
-            aria-invalid={!!errors.firstname}
             className={errors.firstname ? "is-invalid" : ""}
           />
           <input
             type="text"
             name="lastname"
             placeholder="Last Name"
-            aria-invalid={!!errors.lastname}
             className={errors.lastname ? "is-invalid" : ""}
           />
         </div>
+
+        {/* New Email Input Field */}
+        <input
+          type="email"
+          name="email" // This name MUST match {{email}} in your template
+          placeholder="Email Address"
+          className={errors.email ? "is-invalid" : ""}
+        />
 
         <input
           type="text"
           name="subject"
           placeholder="Subject"
-          aria-invalid={!!errors.subject}
           className={errors.subject ? "is-invalid" : ""}
         />
 
@@ -198,20 +213,15 @@ const ContactForm = () => {
           name="message"
           placeholder="Message"
           rows={3}
-          aria-invalid={!!errors.message}
           className={errors.message ? "is-invalid" : ""}
         />
 
-        {/* Button with hover-swap effect; disabled while sending */}
-        <button type="submit" className="send-btn" aria-label="Send message" disabled={sending}>
-          <span className="send-btn__icon" aria-hidden="true">
-            <BsFillSendFill />
-          </span>
+        <button type="submit" className="send-btn" disabled={sending}>
+          <span className="send-btn__icon"><BsFillSendFill /></span>
           <span className="send-btn__label">{sending ? "SENDING..." : "SEND"}</span>
         </button>
       </form>
 
-      {/* Toasts (bottom-right) */}
       <div className="toast-root">
         <Toast
           open={toast.open}
