@@ -17,14 +17,24 @@
 
 .modal-container {
     position: relative;
-    background: linear-gradient(145deg, #131129, #090915);
-    border: 1px solid rgba(169, 147, 254, 0.2);
-    border-radius: 24px;
     width: 100%;
     max-width: 900px;
     max-height: 90vh;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+
     overflow: hidden;
+
+    border-radius: 24px;
+
+    background: linear-gradient(
+        145deg,
+        #131129,
+        #090915
+    );
+
+    border: 1px solid rgba(169, 147, 254, 0.2);
+
+    box-shadow:
+        0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
 .modal-inner-scroll {
@@ -33,14 +43,62 @@
     overflow-y: auto;
 }
 
-/* Custom Scrollbar */
-.modal-inner-scroll::-webkit-scrollbar { width: 6px; }
+/* =========================================
+   CUSTOM SCROLLBAR
+========================================= */
+
+.modal-inner-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
 .modal-inner-scroll::-webkit-scrollbar-thumb {
     background: rgba(169, 147, 254, 0.3);
     border-radius: 10px;
 }
 
-/* Header Styles */
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.close-icon-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    z-index: 10;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    background: rgba(255, 255, 255, 0.05);
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.3rem;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.close-icon-btn:hover {
+    background: #ff4b4b;
+    border-color: #ff4b4b;
+
+    transform: rotate(90deg);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
 .modal-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -48,40 +106,61 @@
 
 .project-category {
     color: #a993fe;
+
     text-transform: uppercase;
     letter-spacing: 0.3em;
+
     font-size: 0.7rem;
     font-weight: 700;
 }
 
 .modal-header h2 {
-    font-size: 2.5rem;
     margin: 0.5rem 0;
-    background: linear-gradient(to bottom, #ffffff, #a993fe);
-    -webkit-background-clip: text; 
-    background-clip: text; /* <--- Add this standard property */
+
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #a993fe
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .header-underline {
-    height: 3px;
     width: 60px;
-    background: #a993fe;
+    height: 3px;
+
     margin: 0 auto;
+
     border-radius: 10px;
+
+    background: #a993fe;
 }
 
-/* Carousel Section */
+/* =========================================
+   CAROUSEL
+========================================= */
+
 .carousel-wrapper {
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.05);
     margin-bottom: 2.5rem;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
     background: #000;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .image-aspect-ratio {
     aspect-ratio: 16 / 9;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,91 +169,199 @@
 .image-aspect-ratio img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 }
 
-/* Details Grid */
+/* =========================================
+   DETAILS GRID
+========================================= */
+
 .modal-details-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 3rem;
 }
 
-.details-left h3, .details-right h3 {
-    font-size: 1.1rem;
-    color: #fff;
+.details-left h3,
+.details-right h3 {
     margin-bottom: 1rem;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    color: #ffffff;
 }
 
 .project-desc {
     color: #94a3b8;
-    line-height: 1.8;
+
     font-size: 1rem;
+    line-height: 1.8;
 }
 
-/* Tech Pills */
+/* =========================================
+   TECH STACK
+========================================= */
+
 .tech-badge-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+
     margin-bottom: 2rem;
 }
 
 .tech-pill {
+    padding: 6px 14px;
+
+    border-radius: 8px;
+
     background: rgba(169, 147, 254, 0.1);
     border: 1px solid rgba(169, 147, 254, 0.2);
+
     color: #a993fe;
-    padding: 6px 14px;
-    border-radius: 8px;
+
     font-size: 0.8rem;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: "JetBrains Mono", monospace;
 }
 
-/* Action Button */
-.primary-btn {
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.action-area {
     display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    margin-top: 2rem;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: #a993fe;
-    color: #fff;
+
     padding: 12px 24px;
+
     border-radius: 12px;
+
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s;
+
+    transition: all 0.3s ease;
+}
+
+.btn-icon {
+    font-size: 1.1rem;
+}
+
+/* Live Demo */
+
+.primary-btn {
+    background: linear-gradient(
+        135deg,
+        #a993fe,
+        #7b61ff
+    );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 0 20px rgba(169, 147, 254, 0.25);
 }
 
 .primary-btn:hover {
-    background: #7b61ff;
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(123, 97, 255, 0.3);
+
+    box-shadow:
+        0 10px 20px rgba(123, 97, 255, 0.35);
 }
 
-.close-icon-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
+/* Source Code */
+
+.secondary-btn {
     background: rgba(255, 255, 255, 0.05);
+
     border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: 0.3s;
+
+    color: #ffffff;
 }
 
-.close-icon-btn:hover { background: #ff4b4b; border-color: #ff4b4b; }
+.secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
 
-/* Responsive */
+    border-color: rgba(169, 147, 254, 0.35);
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   SWIPER CUSTOMIZATION
+========================================= */
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ffffff !important;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.4) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #a993fe !important;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
 @media (max-width: 768px) {
-    .modal-details-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .modal-inner-scroll { padding: 1.5rem; }
-    .modal-header h2 { font-size: 1.8rem; }
+    .modal-inner-scroll {
+        padding: 1.5rem;
+    }
+
+    .modal-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .modal-details-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .action-area {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-overlay {
+        padding: 10px;
+    }
+
+    .modal-container {
+        max-height: 95vh;
+    }
+
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-desc {
+        font-size: 0.95rem;
+    }
+
+    .tech-pill {
+        font-size: 0.75rem;
+    }
 }

@@ -90,7 +90,38 @@ export const MY_PROJECTS = [
         Pname: "MealMinder",
         Pdescription: "A smart food recognition and nutrition tracking system designed to assist users with dietary management. It uses AI to detect food from images, provides nutritional analysis, and recommends healthier alternatives—especially focused on users with Type 2 Diabetes, Hypertension, or High Cholesterol.",
         tech: ["Python", "TensorFlow", "Flask", "OpenCV", "Scikit-learn", "OAuth 2.0", "MySQL", "React.js", "Food-101 Dataset", "USDA Nutrition API"],
-        link: "https://github.com/Ifadha2004/MealMinder",
+        github: "https://github.com/Ifadha2004/MealMinder",
+        demo: "",
+    },
+
+    {
+        images: [
+            "/IdealFactory1.png",
+            "/IdealFactory2.png",
+            "/IdealFactory3.png",
+            "/IdealFactory4.png",
+            "/IdealFactory5.png",
+            "/IdealFactory6.png"
+        ],
+
+        Pname: "Ideal Factory Website Recreation",
+
+        Pdescription:
+            "A modern, fully responsive homepage recreation developed as part of a Frontend Developer technical assessment. The project involved translating a professional Figma design into a production-ready Next.js application with pixel-accurate UI implementation, reusable component architecture, mobile-first responsiveness, and performance-focused frontend development practices. The solution was deployed on Vercel and structured using scalable frontend engineering principles.",
+
+        tech: [
+            "Next.js 15",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "Lucide React",
+            "Responsive Design",
+            "Figma",
+            "Vercel"
+        ],
+
+        github: "https://github.com/Ifadha2004/ideal-factory",
+        demo: "https://ideal-factory.vercel.app/",
     },
 
     {
@@ -98,7 +129,8 @@ export const MY_PROJECTS = [
         Pname: "FinBuddy",
         Pdescription: "FinBuddy is an AI-powered banking assistant chatbot developed using Python, Flask, and PyTorch. It leverages Natural Language Processing (NLP) and Machine Learning to provide intelligent, real-time support for common banking queries. Users can interact through a friendly chat interface to receive assistance on topics such as account types, loan information, interest rates, payment methods, and lost card procedures.",
         tech: ["Python", "Flask", "PyTorch", "NLP", "HTML/CSS"],
-        link: "https://github.com/Ifadha2004/FinBuddy",
+        github: "https://github.com/Ifadha2004/FinBuddy",
+        demo: "",
     },
 
     {
@@ -106,7 +138,8 @@ export const MY_PROJECTS = [
         Pname: "GasByGas",
         Pdescription: "GasByGas is a full-stack web and mobile application designed to digitize LP gas distribution across Sri Lanka. The system enables consumers to request gas online, receive digital tokens, and track deliveries in real time. It includes a mobile app for consumers and web portals for outlet managers and head office administrators.",
         tech: ["React Native", "React.js", "Node.js", "Express.js", "MySQL", "JWT", "SMTP"],
-        link: "https://github.com/Ifadha2004/GasByGas",
+        github: "https://github.com/Ifadha2004/GasByGas",
+        demo: "",
     },
 
     {
@@ -114,7 +147,8 @@ export const MY_PROJECTS = [
         Pname: "DreamDay",
         Pdescription: "A complete wedding planning web application built using ASP.NET MVC. It allows couples to register, plan events, book vendors, and manage tasks easily. Designed with user roles and a clean admin dashboard for efficient event organization.",
         tech: ["ASP.NET MVC", "C#", "Entity Framework", "MySQL", "Bootstrap"],
-        link: "https://github.com/Ifadha2004/WeddingPlanner_DreamDay",
+        github: "https://github.com/Ifadha2004/WeddingPlanner_DreamDay",
+        demo: "",
     },
 
     {
@@ -122,15 +156,17 @@ export const MY_PROJECTS = [
         Pname: "TravelMate", 
         Pdescription: "TravelBuddy is an AI-powered chatbot designed to assist users with travel planning through a conversational interface. It offers personalized destination suggestions, helpful travel tips, and itinerary recommendations based on user preferences. The chatbot provides a smooth, context-aware interaction experience, allowing users to receive accurate and relevant travel guidance in real time. Built as a smart assistant, TravelBuddy aims to simplify the process of trip planning and improve decision-making for travelers.",
         tech: ["Python", "NLP", "Flask", "HTML", "CSS"],
-        link: "https://github.com/Ifadha2004/TravelMate", 
-    },  
+        github: "https://github.com/Ifadha2004/TravelMate",
+        demo: "",
+    },
     
     {
         images: ["BookHaven1.png", "BookHaven2.png", "BookHaven3.png", "BookHaven4.png", "BookHaven5.png"],
         Pname: "BookHaven",
         Pdescription: "BookHaven is a Windows Forms desktop application developed in C# to manage day-to-day bookstore operations. The system allows administrators and staff to efficiently handle book inventory, sales transactions, order tracking, and supplier management.",
         tech: ["C#", "Windows Forms", "SQL Server", "Entity Framework", "Layerd Architecture"],
-        link: "https://github.com/Ifadha2004/BookHaven.git",
+        github: "https://github.com/Ifadha2004/BookHaven.git",
+        demo: "",
     },
 
     {
@@ -138,7 +174,8 @@ export const MY_PROJECTS = [
         Pname: "Blogs ByIfi", 
         Pdescription: "A simple and clean blog application built using Flask. It includes user authentication, post creation, and editing features. Designed to showcase core web development skills while offering a responsive and smooth reading experience.",
         tech: ["Python", "Flask", "SQLite", "HTML", "CSS"],
-        ink: "https://github.com/Ifadha2004/FlaskBlog", 
+        github: "https://github.com/Ifadha2004/FlaskBlog",
+        demo: "",
     },
 
     {
@@ -146,7 +183,8 @@ export const MY_PROJECTS = [
         Pname: "Earth Savior",
         Pdescription: "An e-commerce website dedicated to a social business that sells handmade soaps. The platform allows users to browse and purchase a variety of artisanal soaps, promoting sustainable and ethical products.",
         tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-        link: "",
+        github: "",
+        demo: "",
     },
 
     {
@@ -166,6 +204,7 @@ export const MY_PROJECTS = [
             "JWT Authentication",
             "Recharts"
             ],
-        link: "https://github.com/Ifadha2004/Task-Manager",
+        github: "https://github.com/Ifadha2004/Task-Manager",
+        demo: "",
     },
 ];
