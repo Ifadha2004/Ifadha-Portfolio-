@@ -68,7 +68,22 @@ export function BentoGrid({ items }) {
                 ))}
               </div>
 
-              <span className="text-xs text-[#a993fe] font-bold opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300 cursor-pointer">
+              <span
+                onClick={() => item.onViewDetails?.(item)}
+                role={item.onViewDetails ? "button" : undefined}
+                tabIndex={item.onViewDetails ? 0 : undefined}
+                onKeyDown={(e) => {
+                  if (item.onViewDetails && (e.key === "Enter" || e.key === " ")) {
+                    item.onViewDetails(item);
+                  }
+                }}
+                className={cn(
+                  "text-xs text-[#a993fe] font-bold transition-all duration-300",
+                  item.onViewDetails
+                    ? "opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 cursor-pointer hover:text-white"
+                    : "opacity-0 pointer-events-none"
+                )}
+              >
                 {item.cta || "View Details →"}
               </span>
             </div>
