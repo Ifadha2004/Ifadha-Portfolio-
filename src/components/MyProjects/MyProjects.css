@@ -62,7 +62,20 @@
 /* Each card should snap to start */
 .project-card {
   scroll-snap-align: start;
-  /* start hidden so GSAP can animate cleanly if needed */
-  opacity: 0;
+  /* opacity is now controlled entirely by GSAP (gsap.set / gsap.to)
+     in MyProjects.jsx — not hardcoded here — so a failed/stale
+     ScrollTrigger can never leave cards permanently invisible */
   will-change: transform, opacity;
+}
+
+/* Mobile: reduce heavy side padding so cards + title aren't cramped */
+@media (max-width: 640px) {
+  .MyProjects {
+    padding: 3rem 1rem;
+  }
+
+  .Projects-Container h5 {
+    margin-left: 1rem;
+    font-size: 1.9rem;
+  }
 }
