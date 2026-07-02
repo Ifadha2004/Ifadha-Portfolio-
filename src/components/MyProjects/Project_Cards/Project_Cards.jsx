@@ -17,22 +17,22 @@ const ProjectCards = ({ projects, onCardClick }) => {
               <CardItem
                 translateZ="60"
                 as="div"
-                className="text-lg font-semibold text-white mb-4 flex items-center justify-between gap-3"
-                >
-                <h3 className="whitespace-nowrap">{details.Pname}</h3>
+                className="text-lg font-semibold text-white mb-4 flex items-start justify-between gap-3 min-h-[3.5rem]"
+              >
+                <h3 className="line-clamp-2 leading-tight">{details.Pname}</h3>
                 <button
-                    className="text-white/70 hover:text-[#a993fe] transition"
-                    onClick={() => onCardClick(details)}
+                  className="text-white/70 hover:text-[#a993fe] transition shrink-0 mt-0.5"
+                  onClick={() => onCardClick(details)}
                 >
-                    <HiBarsArrowUp size={20} />
+                  <HiBarsArrowUp size={20} />
                 </button>
               </CardItem>
 
-              <CardItem translateZ="80">
+              <CardItem translateZ="80" className="w-full">
                 <img
                   src={previewImage}
                   alt={details.Pname}
-                  className="w-full h-48 object-cover rounded-lg group-hover/card:shadow-xl"
+                  className="w-full h-48 object-cover object-center rounded-lg group-hover/card:shadow-xl"
                 />
               </CardItem>
 

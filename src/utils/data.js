@@ -86,15 +86,6 @@ export const WORK_EXPERIENCE = [
 
 export const MY_PROJECTS = [
     {
-        images: ["/MealMinder1.png", "/MealMinder2.png", "/MealMinder3.png", "/MealMinder4.png", "MealMinder5.png", "MealMinder6.png"],
-        Pname: "MealMinder",
-        Pdescription: "A smart food recognition and nutrition tracking system designed to assist users with dietary management. It uses AI to detect food from images, provides nutritional analysis, and recommends healthier alternatives—especially focused on users with Type 2 Diabetes, Hypertension, or High Cholesterol.",
-        tech: ["Python", "TensorFlow", "Flask", "OpenCV", "Scikit-learn", "OAuth 2.0", "MySQL", "React.js", "Food-101 Dataset", "USDA Nutrition API"],
-        github: "https://github.com/Ifadha2004/MealMinder",
-        demo: "",
-    },
-
-    {
         images: [
             "/IdealFactory1.png",
             "/IdealFactory2.png",
@@ -122,6 +113,50 @@ export const MY_PROJECTS = [
 
         github: "https://github.com/Ifadha2004/ideal-factory",
         demo: "https://ideal-factory.vercel.app/",
+    },
+
+    {
+        images: [
+            "/MetabolicHealth1.png",
+            "/MetabolicHealth2.png",
+            "/MetabolicHealth3.png",
+            "/MetabolicHealth4.png",
+            "/MetabolicHealth5.png",
+            "/MetabolicHealth6.png",
+            "/MetabolicHealth7.png"
+        ],
+
+        Pname: "Global Metabolic Health Analytics Dashboard",
+
+        Pdescription:
+            "An interactive data analytics dashboard analysing global obesity, diabetes, and blood pressure trends using statistical modelling, K-Means clustering, PCA, forecasting, and linked Altair visualisations.",
+
+        tech: [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Altair",
+            "Scikit-learn",
+            "Matplotlib",
+            "Jupyter Notebook",
+            "Machine Learning",
+            "Data Analytics",
+            "PCA",
+            "K-Means",
+            "Linear Regression"
+        ],
+
+        github: "YOUR_GITHUB_LINK",
+        demo: "https://health-dashboard-two-mauve.vercel.app/",
+    },
+
+    {
+        images: ["/MealMinder1.png", "/MealMinder2.png", "/MealMinder3.png", "/MealMinder4.png", "MealMinder5.png", "MealMinder6.png"],
+        Pname: "MealMinder",
+        Pdescription: "A smart food recognition and nutrition tracking system designed to assist users with dietary management. It uses AI to detect food from images, provides nutritional analysis, and recommends healthier alternatives—especially focused on users with Type 2 Diabetes, Hypertension, or High Cholesterol.",
+        tech: ["Python", "TensorFlow", "Flask", "OpenCV", "Scikit-learn", "OAuth 2.0", "MySQL", "React.js", "Food-101 Dataset", "USDA Nutrition API"],
+        github: "https://github.com/Ifadha2004/MealMinder",
+        demo: "",
     },
 
     {
@@ -206,5 +241,5 @@ export const MY_PROJECTS = [
             ],
         github: "https://github.com/Ifadha2004/Task-Manager",
         demo: "",
-    },
+    }
 ];
