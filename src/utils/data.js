@@ -95,7 +95,7 @@ export const MY_PROJECTS = [
             "/IdealFactory6.png"
         ],
 
-        Pname: "Ideal Factory Website Recreation",
+        Pname: "Ideal Factory Website",
 
         Pdescription:
             "A modern, fully responsive homepage recreation developed as part of a Frontend Developer technical assessment. The project involved translating a professional Figma design into a production-ready Next.js application with pixel-accurate UI implementation, reusable component architecture, mobile-first responsiveness, and performance-focused frontend development practices. The solution was deployed on Vercel and structured using scalable frontend engineering principles.",
