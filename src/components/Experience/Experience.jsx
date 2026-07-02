@@ -1,73 +1,3 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-// import "./Experience.css";
-
-// const Experience = () => {
-//   const experiences = [
-//     {
-//       role: "Full-Stack Developer",
-//       company: "VisualSoft (Pvt) Ltd",
-//       period: "2+ Years of Experience", // Adjusted based on summary
-//       points: [
-//         "Designed, developed, and maintained ERP-based web applications using modern full-stack technologies.",
-//         "Worked across both front-end and back-end layers, contributing to system architecture, feature development, and bug fixes.",
-//         "Optimized SQL queries and database schemas to improve system performance and reliability.",
-//         "Built RESTful APIs and integrated them with frontend systems to support secure data exchange.",
-//         "Implemented structured validation and business rule automation to enhance operational efficiency.",
-//         "Followed clean code principles, version control best practices, and participated in peer code reviews."
-//       ],
-//     },
-//   ];
-
-//   return (
-//     <section id="experience" className="experience-section">
-//       <div className="container mx-auto px-4">
-//         <motion.h2 
-//           initial={{ opacity: 0, y: 20 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ duration: 0.6 }}
-//           className="section-title text-center mb-16"
-//         >
-//           Professional <span className="name-gradient">Experience</span>
-//         </motion.h2>
-
-//         <div className="experience-grid">
-//           {experiences.map((exp, index) => (
-//             <motion.div
-//               key={index}
-//               initial={{ opacity: 0, x: -30 }}
-//               whileInView={{ opacity: 1, x: 0 }}
-//               transition={{ duration: 0.6, delay: index * 0.2 }}
-//               className="experience-card glass-card"
-//             >
-//               <div className="card-glow"></div>
-//               <div className="card-content">
-//                 <div className="card-header">
-//                   <div>
-//                     <h3 className="role-title">{exp.role}</h3>
-//                     <p className="company-name">{exp.company}</p>
-//                   </div>
-//                   <span className="experience-period glass-badge">{exp.period}</span>
-//                 </div>
-                
-//                 <ul className="experience-list">
-//                   {exp.points.map((point, i) => (
-//                     <li key={i} className="experience-item">
-//                       <span className="bullet-point"></span>
-//                       {point}
-//                     </li>
-//                   ))}
-//                 </ul>
-//               </div>
-//             </motion.div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Experience;
 import React from "react";
 import { motion } from "framer-motion";
 import { BentoGrid } from "../ui/bento-grid"; 
@@ -77,37 +7,85 @@ import "./Experience.css";
 const Experience = () => {
   const experienceItems = [
     {
-      title: "Full-Stack Developer @ VisualSoft (Pvt) Ltd",
-      meta: "Oct 2023 – Dec 2025",
-      description: "Designed, developed, and maintained production-grade ERP-based web applications using modern full-stack technologies. Contributed to core system architecture across both front-end and back-end layers while ensuring robust feature development and critical bug fixes.",
+      title: "Full-Stack Developer",
+      meta: "VisualSoft (Pvt) Ltd • Oct 2023 – Dec 2025",
+
+      description:
+        "Designed, developed, and maintained enterprise ERP applications used across procurement, finance, inventory, and business operations. Collaborated with cross-functional teams to deliver scalable solutions while ensuring clean architecture, performance, and production stability.",
+
       icon: <Code2 className="w-5 h-5 text-purple-500" />,
-      status: "Experience",
-      tags: ["ERP Systems", "React", "Node.js", "Full-Stack"],
-      colSpan: 3, 
+
+      status: "2+ Years",
+
+      tags: [
+        "React",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "REST APIs",
+        "Git",
+        "ERP"
+      ],
+
+      colSpan: 3,
+
       hasPersistentHover: true,
     },
+
     {
-      title: "Database Optimization",
-      meta: "Performance",
-      description: "Optimized complex SQL queries and database schemas to significantly improve overall system performance and data reliability.",
-      icon: <Database className="w-4 h-4 text-emerald-500" />,
-      tags: ["SQL", "MySQL", "Optimization"],
-      colSpan: 1,
-    },
-    {
-      title: "API & System Integration",
-      meta: "RESTful Architecture",
-      description: "Built robust RESTful APIs and integrated them with frontend systems to support secure, high-speed data exchange.",
+      title: "Backend Development",
+
+      meta: "Node.js • REST APIs",
+
+      description:
+        "Designed scalable backend services, implemented RESTful APIs, handled authentication, business logic, and secure communication between frontend and database layers.",
+
       icon: <Cpu className="w-4 h-4 text-blue-500" />,
-      tags: ["REST APIs", "Integration", "Security"],
+
+      tags: [
+        "Node.js",
+        "Express",
+        "JWT"
+      ],
+
       colSpan: 1,
     },
+
     {
-      title: "Quality & Automation",
-      meta: "Standards",
-      description: "Implemented structured validation and business rule automation while maintaining clean code through peer reviews and version control best practices.",
+      title: "Database Engineering",
+
+      meta: "MySQL",
+
+      description:
+        "Optimized SQL queries, improved database performance, designed efficient schemas, and ensured reliable data integrity across enterprise ERP modules.",
+
+      icon: <Database className="w-4 h-4 text-emerald-500" />,
+
+      tags: [
+        "MySQL",
+        "SQL",
+        "Performance"
+      ],
+
+      colSpan: 1,
+    },
+
+    {
+      title: "Code Quality & Collaboration",
+
+      meta: "Production Ready",
+
+      description:
+        "Maintained clean, maintainable code through Git workflows, peer reviews, debugging, validation, and continuous improvements across production systems.",
+
       icon: <ShieldCheck className="w-4 h-4 text-sky-500" />,
-      tags: ["Clean Code", "Automation", "Git"],
+
+      tags: [
+        "Git",
+        "Clean Code",
+        "Debugging"
+      ],
+
       colSpan: 1,
     },
   ];
