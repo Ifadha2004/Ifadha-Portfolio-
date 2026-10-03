@@ -85,6 +85,35 @@ export const WORK_EXPERIENCE = [
 ];
 
 export const MY_PROJECTS = [
+        {
+        images: [
+            "/Mulaan1.png",
+            "/Mulaan2.png",
+            "/Mulaan3.png",
+            "/Mulaan4.png",
+            "/Mulaan5.png"
+        ],
+
+        Pname: "Mulaan — Luxury Fashion Website",
+
+        Pdescription:
+            "Designed and developed a full-stack website for Mulaan, a luxury modest-wear brand. The experience combines an editorial visual style with responsive product browsing, collection showcases, and a digital magazine. Customers can select product variants, manage their cart, and submit order details through WhatsApp. Built with Next.js and TypeScript, with MongoDB-backed product and collection management, Cloudinary image handling, and animated interactions using Framer Motion.",
+
+        tech: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "MongoDB",
+            "Mongoose",
+            "Cloudinary",
+            "Zustand"
+        ],
+
+        github: "https://github.com/Ifadha2004/Mulaan",
+        demo: "https://mulaan-ebon.vercel.app/",
+    },
     {
         images: [
             "/IdealFactory1.png",
