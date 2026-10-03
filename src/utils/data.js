@@ -91,7 +91,8 @@ export const MY_PROJECTS = [
             "/Mulaan2.png",
             "/Mulaan3.png",
             "/Mulaan4.png",
-            "/Mulaan5.png"
+            "/Mulaan5.png",
+            "/Mulaan6.png"
         ],
 
         Pname: "Mulaan — Luxury Fashion Website",
